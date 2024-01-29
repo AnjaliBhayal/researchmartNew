@@ -1,8 +1,4 @@
-.container{
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-}
+
 .about-column-parent {
     display: flex;
     align-items: center;
@@ -208,7 +204,7 @@ h1.heading {
     text-align: center;
 }
 .rectangle {
-    width: 200px;
+    /* width: 200px; */
     height: 340px;
     color: white;
     background-color: black;
@@ -399,9 +395,6 @@ label {
     margin-bottom: 8px;
 }
 
-input#exampleInputEmail1 {
-    font-size: 14px;
-}
 
 button.form.btn-primary {
     width: 100%;
@@ -414,8 +407,13 @@ section#form {
 }
 
 input#exampleInputEmail1 {
-    padding: 14px 13px;
+    padding: 10px 10px;
     border-radius: 0;
+    border: 1px solid grey;
+    font-size: 14px;
+}
+textarea#exampleFormControlTextarea1{
+    border: 1px solid grey;
 }
 
 
@@ -947,8 +945,13 @@ header.offcanvas-menu {
     display: none;
 }
 
-
-
+.services-parent {
+    background-color: #1F1F27;
+    height: 100%;
+}
+.pricing-parent {
+    padding-top: 110px;
+}
 
 /*===============================================
             Smart phone and tablets
