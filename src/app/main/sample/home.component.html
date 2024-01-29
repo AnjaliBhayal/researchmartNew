@@ -116,18 +116,39 @@
               </h1>
             </div>
             <div class="form-parent">
-              <form>
+              <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
                 <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter Your Name">
+                  <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11" aria-describedby="emailHelp"
+                    placeholder="Enter Your Name" [ngClass]="{
+                      'is-invalid': submittedb && b.name.errors
+                    }" />
+                    <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
+                      <div *ngIf="b.name.errors.required" > Full Name is required</div>
+                    </div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter Your Name">
+                  <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11" aria-describedby="emailHelp"
+                    placeholder="Enter Your pNumber" [ngClass]="{
+                      'is-invalid': submittedb && b.pNumber.errors
+                    }" />
+                    <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
+                      <div *ngIf="b.pNumber.errors.required" > Phone Number is required</div>
+                      <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
+                        Mobile Number requied only 10 characters.
+                    </div>
+                    <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
+                      Mobile Number requied only 10 characters.
+                  </div>
+                    </div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter Phone Number">
+                  <input type="email" class="form-control"  formControlName="citys" id="exampleInputEmail11" aria-describedby="emailHelp"
+                    placeholder="Enter Your city"  [ngClass]="{
+                      'is-invalid': submittedb && b.citys.errors
+                    }" >
+                    <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
+                      <div *ngIf="b.citys.errors.required" > City is required</div>
+                    </div>
                 </div>
                 <button type="submit" class="form1">Submit</button>
               </form>
@@ -700,26 +721,56 @@
                   Contact Us
                 </h1>
                 <div class="form-parent">
-                  <form>
+                  <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Full Name</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter Your Name">
+                      <input type="text" class="form-control" formControlName="fullName" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter Your Name" [ngClass]="{
+                          'is-invalid': submitted && f.fullName.errors
+                        }" />
+                        <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+                          <div *ngIf="f.fullName.errors.required"> Full Name is required</div>
+                        </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter Your Name">
+                      <input type="email" class="form-control"  formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter Your Name" [ngClass]="{
+                          'is-invalid': submitted && f.email.errors
+                        }" >
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                          <div *ngIf="f.email.errors.required"> Email is required</div>
+                        </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Phone Number</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter Phone Number">
+                      <input type="tel" class="form-control" formControlName="phone" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter Phone Number" [ngClass]="{
+                          'is-invalid': submitted && f.phone.errors
+                        }">
+                        <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                          <div *ngIf="f.phone.errors.required"> Phone Number is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">City</label>
+                      <input type="text" class="form-control" formControlName="city" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter Phone Number" [ngClass]="{
+                          'is-invalid': submitted && f.city.errors
+                        }">
+                        <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                          <div *ngIf="f.city.errors.required"> city is required</div>
+                        </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlTextarea1">Message</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Select Message"> </textarea>
+                      <textarea class="form-control"  formControlName="message" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Select Message" [ngClass]="{
+                          'is-invalid': submitted && f.message.errors
+                        }"> </textarea>
+                        <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                          <div *ngIf="f.message.errors.required"> Message is required</div>
+                        </div>
                     </div>
                     <button type="submit" class="form btn-primary">Submit</button>
                   </form>
