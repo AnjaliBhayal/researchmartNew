@@ -129,7 +129,7 @@ button.btn:hover {
 
 .about-ctn p {
     color: #000;
-    font-family: "DM Serif Display";
+    /* font-family: "DM Serif Display"; */
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -1044,6 +1044,26 @@ header.offcanvas-menu {
     }.container, .container-sm {
         max-width: 1170px;
     }
+    section#about {
+        /* background-image: url(../images/Layer\ 6.png); */
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .line.d-flex {
+        justify-content: center;
+    }
+      /*-- about --*/
+      .about .my__img {
+        padding-right: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .about .padding-left-25 {
+        padding-left: 15px;
+    }
 }
 
 
@@ -1141,7 +1161,24 @@ header.offcanvas-menu {
     .container, .container-sm {
         max-width: 1170px;
     }
+    section#about {
+        /* background-image: url(../images/Layer\ 6.png); */
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .line.d-flex {
+        justify-content: center;
+    }
+       /*-- about --*/
+       .about .my__img {
+        margin-bottom: 30px
+    }
 
+    .about .padding-left-35 {
+        padding-left: 15px;
+    }
 }
 
 
@@ -1156,3 +1193,134 @@ header.offcanvas-menu {
             Large screen
 ===============================================*/
 
+
+/* sndcbshjdcv */
+.about h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 18px;
+}
+
+
+.about .my__img {
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+/* .about .my__img img {
+    box-shadow: 20px 20px 1px #f3f3f3;
+} */
+
+.about .padding-left-25 {
+    padding-left: 25px;
+}
+
+.about .follow-me {
+    margin-top: 25px;
+}
+
+.about h6 {
+    margin-bottom: 17px;
+    display: inline-block;
+    font-size: 16px;
+    color: #222;
+}
+
+.about .social {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.about .social li {
+    display: inline-block;
+}
+
+.about .social a {
+    margin-left: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.about .social a:hover {
+    opacity: 0.5;
+}
+
+.about .social li:first-of-type a {
+    margin-left: 0;
+}
+
+.about .social i {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.my__img.animated.animated_scroll.fadeInUp img {
+    width: 100%;
+}
+
+/* samnfcvbadsjhfcv */
+
+
+
+
+
+
+
+
+
+
+
+/*===============================================
+            Smart phone and tablets
+===============================================*/
+
+@media(max-width:767px) {
+    .services-clm.d-flex.align-item-center.justify-content-between {
+        text-align: center;
+    }
+    .serviceline.d-flex {
+        justify-content: center;
+    }
+}
+
+@media(max-width:500px) {
+
+    .services-clm.d-flex.align-item-center.justify-content-between {
+        text-align: center;
+    }
+    .serviceline.d-flex {
+        justify-content: center;
+    }
+}
+
+
+/*===============================================
+            Small screen
+===============================================*/
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .services-clm.d-flex.align-item-center.justify-content-between {
+        text-align: center;
+    }
+    .serviceline.d-flex {
+        justify-content: center;
+    }
+}
+
+
+/*===============================================
+            Medium screen
+===============================================*/
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+
+/*===============================================
+            Large screen
+===============================================*/
+
+@media(min-width:1200px) {
+
+}

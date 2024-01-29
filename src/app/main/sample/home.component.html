@@ -6,70 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-
 <body>
-  <!-- <header class="header">
-    <div class="container "> 
-      <div class="header-parent" d>
-        <div class="header-logo">
-          <a href=""><img src="../assets/img/background-1.svg" alt="" /></a>
+  <nav class="header-section">
+    <div class="container">
+      <div class="header-parent">
+        <div class="header-logo col-sm-3 col-md-2 col-lg-2">
+          <a (click)="openModel(content)"><img src="../assets/img/background-1.svg" alt="" /></a>
         </div>
-        <div class="menu">
-          <ul>
-            <li class ="home">Home</li>
-            <li class ="about-us">About Us</li>
-            <li class ="pricing">Pricing</li>
-            <li class ="contact-us">Contact Us</li>
+        <div class="header-menu col-sm-3 col-md-7 col-lg-7">
+          <ul class="d-flex align-item-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+            </li>
           </ul>
         </div>
-        <div class="get-btn">
-          <button>Get in Touch</button>
+        <div class="get-btn col-sm-3 col-md-3 col-lg-3">
+          <button class="get-btn1" type="button">Get in Touch</button>
         </div>
       </div>
     </div>
-  </header> -->
-
-  <!DOCTYPE html>
-  <html lang="en">
-
-<!--   <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </head> -->
-
-  <body>
-
-    <nav class="header-section">
-      <div class="container">
-        <div class="header-parent">
-          <div class="header-logo col-sm-3 col-md-2 col-lg-2">
-            <a (click)="openModel(content)"><img src="../assets/img/background-1.svg" alt="" /></a>
-          </div>
-          <div class="header-menu col-sm-3 col-md-7 col-lg-7">
-            <ul class="d-flex align-item-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="get-btn col-sm-3 col-md-3 col-lg-3">
-            <button class="get-btn1" type="button">Get in Touch</button>
-          </div>
+  </nav>
+  <header class="offcanvas-menu">
+    <div class="container-fluid">
+    <div class="logo-icon">
+        <div class="logo">
+            <img src="image/Layer 13.png" alt="">
         </div>
-      </div>
+        <div class="icon-menu">
+            <a href="">login</a>
+            <a href=""><img src="image/ .png" alt=""></a>    
+        </div>
+    </div>
+    </div>
+    <input type="checkbox" id="toogle-menu" />
+
+    <label for="toogle-menu" class="toogle-open"><span></span></label>
+    <nav>
+        <div>
+            <a href="#"> <i class="fab fa-css3-alt"></i><img src="image/Layer 13.png" alt=""> </a>
+            <label for="toogle-menu" class="toogle-close">
+                <span></span>
+            </label>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us </a></li>
+            <li><a href="">Pricing </a></li>
+            <li><a href="">Contact us </a></li>
+            <!-- <li><a href="#section5">CONTACT </a></li> -->
+        </ul>
     </nav>
+<<<<<<< Updated upstream
     <header class="offcanvas-menu">
       <div class="container-fluid">
       <div class="logo-icon">
@@ -153,400 +149,321 @@
                 <button type="submit" class="form1">Submit</button>
               </form>
             </div>
+=======
+>>>>>>> Stashed changes
     
-           
+</header>
+
+  <section class="ban_sec">
+    <!-- <div class="container"> -->
+      <div class="ban_img">
+        <img src="../assets/img/Group 111 (1).svg" alt="banner" border="0">
+      <div class="container">
+        <div class="ban_text">
+         
+          <div class="banner-ctn">
+            <h1>
+              Unlock Your Path to Profit With Our Stock Recommendations
+            </h1>
           </div>
-        </div>
-        </div>
-      <!-- </div> -->
-    </section>
-    <!--   <section class="banner">
-      <div class="container-fluid">
-        <div class="banner-parent">
-          <div class="container">
-            
+          <div class="form-parent">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter Your Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter Your Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter Phone Number">
+              </div>
+              <button type="submit" class="form1">Submit</button>
+            </form>
           </div>
+  
+         
+        </div>
+      </div>
+      </div>
+    <!-- </div> -->
+  </section>
+  <!--   <section class="banner">
+    <div class="container-fluid">
+      <div class="banner-parent">
+        <div class="container">
           
         </div>
+        
       </div>
-    </section> -->
+    </div>
+  </section> -->
 
-    <section id="about">
-      <div class="about-parent">
-        <div class="container">
-          <div class="about-column-parent">
-            <div class="about-column">
-              <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a>
-            </div>
-            <div class="about-clm">
-              <div class="about-ctn">
-                <div class="line d-flex">
-                  <img class="line" src="../assets/img/line-1-1.svg" />
-                  <h1>About <span>Us</span></h1>
-                </div>
-                <p>
-                  At Research Mart, Our Mission Is To Provide Top-Class Stock Recommendations ,
-                  Through Top-Class Thorough Research.
-                </p>
-
-                <button class="btn">Contact Us</button>
-
+  <section id="about">
+    <div class="about-parent">
+      <div class="container">
+        <div class="about-column-parent">
+          <div class="about-column">
+            <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a>
+          </div>
+          <div class="about-clm">
+            <div class="about-ctn">
+              <div class="line d-flex">
+                <img class="line" src="../assets/img/line-1-1.svg" />
+                <h1>About <span>Us</span></h1>
               </div>
+              <p>
+                At Research Mart, Our Mission Is To Provide Top-Class Stock Recommendations ,
+                Through Top-Class Thorough Research.
+              </p>
+
+              <button class="btn">Contact Us</button>
+
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="services">
-      <div class="services-parent">
-        <div class="container">
-          <div class="services-column-parent">
-            <div class="services-column">
-              <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
-            </div>
-            <div class="services-clm d-flex align-item-center justify-content-between">
-              <div class="services-ctn">
-                <div class="serviceline d-flex">
-                  <img class="line" src="../assets/img/line-1-1.svg" />
-                  <h1>Our <span>Services</span></h1>
-                </div>
-                <h1 class="heading">
-                  Our Services
-                </h1>
 
+  <section id="services">
+    <div class="services-parent">
+      <div class="container">
+        <div class="services-column-parent">
+          <div class="services-column">
+            <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
+          </div>
+          <div class="services-clm d-flex align-item-center justify-content-between">
+            <div class="services-ctn">
+              <div class="serviceline d-flex">
+                <img class="line" src="../assets/img/line-1-1.svg" />
+                <h1>Our <span>Services</span></h1>
               </div>
-              <div class="btn-column">
-                <button class="service-btn">View all Services</button>
-              </div>
+              <h1 class="heading">
+                Our Services
+              </h1>
+
             </div>
-            <div class="rectangele-parent">
-              <div class="container">
-                <div class="parent">
-                  <div class="row">
-                    <div class="rectangle col-sm-12 col-md-12 col-lg-4">
-                      Stocks Unnati
-                    </div>
-                    <div class="rectangle col-sm-12 col-md-12 col-lg-4">
-                      Future Pragati
-                    </div>
-                    <div class="rectangle col-sm-12 col-md-12 col-lg-4">
-                      Option Labh
-                    </div>
-                    <div class="rectangle col-sm-12 col-md-12 col-lg-4">
-                      Options Chayan
-                    </div>
-                    <div class="rectangle col-sm-12 col-md-12 col-lg-4">
-                      Suchkank Munafa (Index Options)
-                    </div>
-                    <div class="rectangle col-sm-12 col-md-12 col-lg-4">
-                      Nifty Raai (Nifty, FINNIFTY & Bank Nifty Index)
-                    </div>
+            <div class="btn-column">
+              <button class="service-btn">View all Services</button>
+            </div>
+          </div>
+          <div class="rectangele-parent">
+            <div class="container">
+              <div class="parent">
+                <div class="row">
+                  <div class="rectangle col-sm-12 col-md-12 col-lg-4">
+                    Stocks Unnati
                   </div>
-                 
+                  <div class="rectangle col-sm-12 col-md-12 col-lg-4">
+                    Future Pragati
+                  </div>
+                  <div class="rectangle col-sm-12 col-md-12 col-lg-4">
+                    Option Labh
+                  </div>
+                  <div class="rectangle col-sm-12 col-md-12 col-lg-4">
+                    Options Chayan
+                  </div>
+                  <div class="rectangle col-sm-12 col-md-12 col-lg-4">
+                    Suchkank Munafa (Index Options)
+                  </div>
+                  <div class="rectangle col-sm-12 col-md-12 col-lg-4">
+                    Nifty Raai (Nifty, FINNIFTY & Bank Nifty Index)
+                  </div>
                 </div>
-                  <div class="box1">
-                    <div class="box">
-                    </div>
-                  </div>
+               
               </div>
+                <div class="box1">
+                  <div class="box">
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    </section>
+  </section>
 
 
 
-    <!-- pricing -->
-    <!-- <section id="pricing">
-      <div class="pricing-parent">
-        <div class="container">
-          <div class="pricing-column-parent">
-            <div class="pricing-column">
-            </div>
-            <div class="pricing-clm">
-              <div class="pricing-ctn">
-                <div class="serviceline d-flex justify-content-center">
-                  <img class="line" src="../assets/img/line-1-1.svg" />
-                  <h1 style="color: black;">Our <span>Pricing</span></h1>
-                  <img class="line" src="../assets/img/line-1-1.svg" />
-                </div>
-                <h1 class="pricing-heading">
-                  Pricing
-                </h1>
-                <div class="pricing-box">
+  <!-- pricing -->
+  <!-- <section id="pricing">
+    <div class="pricing-parent">
+      <div class="container">
+        <div class="pricing-column-parent">
+          <div class="pricing-column">
+          </div>
+          <div class="pricing-clm">
+            <div class="pricing-ctn">
+              <div class="serviceline d-flex justify-content-center">
+                <img class="line" src="../assets/img/line-1-1.svg" />
+                <h1 style="color: black;">Our <span>Pricing</span></h1>
+                <img class="line" src="../assets/img/line-1-1.svg" />
+              </div>
+              <h1 class="pricing-heading">
+                Pricing
+              </h1>
+              <div class="pricing-box">
 
-                </div>
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
-                  data-bs-interval="false">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
+              </div>
+              <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+                data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
 
-                      <div class="card">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="stock-heading">
-                              <h1>Stocks Unnati</h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore </p>
-                              <button class="read-more">Read More...</button>
-                            </div>
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="stock-heading">
+                            <h1>Stocks Unnati</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore </p>
+                            <button class="read-more">Read More...</button>
                           </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>1 MONTH</li>
-                              <li>QUARTERLY</li>
-                              <li>HALF YEARLY</li>
-                              <li>YEARLY</li>
-                              <li>1 MONTH</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>12,000</li>
-                              <li>32,000</li>
-                              <li>60,000</li>
-                              <li>100000</li>
-                              <li>12000</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul class="detail">
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                            </ul>
-                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <ul>
+                            <li>1 MONTH</li>
+                            <li>QUARTERLY</li>
+                            <li>HALF YEARLY</li>
+                            <li>YEARLY</li>
+                            <li>1 MONTH</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2">
+                          <ul>
+                            <li>12,000</li>
+                            <li>32,000</li>
+                            <li>60,000</li>
+                            <li>100000</li>
+                            <li>12000</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2">
+                          <ul class="detail">
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
-                    <div class="carousel-item">
-                      <div class="card">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="stock-heading">
-                              <h1>Stocks Unnati</h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore </p>
-                              <button class="read-more">Read More...</button>
-                            </div>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>1 MONTH</li>
-                              <li>QUARTERLY</li>
-                              <li>HALF YEARLY</li>
-                              <li>YEARLY</li>
-                              <li>1 MONTH</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>12,000</li>
-                              <li>32,000</li>
-                              <li>60,000</li>
-                              <li>100000</li>
-                              <li>12000</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul class="detail">
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                            </ul>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="stock-heading">
+                            <h1>Stocks Unnati</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore </p>
+                            <button class="read-more">Read More...</button>
                           </div>
                         </div>
-                      </div>
-
-                    </div>
-                    <div class="carousel-item">
-                      <div class="card">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="stock-heading">
-                              <h1>Stocks Unnati</h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore </p>
-                              <button class="read-more">Read More...</button>
-                            </div>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>1 MONTH</li>
-                              <li>QUARTERLY</li>
-                              <li>HALF YEARLY</li>
-                              <li>YEARLY</li>
-                              <li>1 MONTH</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>12,000</li>
-                              <li>32,000</li>
-                              <li>60,000</li>
-                              <li>100000</li>
-                              <li>12000</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul class="detail">
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                            </ul>
-                          </div>
+                        <div class="col-md-2">
+                          <ul>
+                            <li>1 MONTH</li>
+                            <li>QUARTERLY</li>
+                            <li>HALF YEARLY</li>
+                            <li>YEARLY</li>
+                            <li>1 MONTH</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2">
+                          <ul>
+                            <li>12,000</li>
+                            <li>32,000</li>
+                            <li>60,000</li>
+                            <li>100000</li>
+                            <li>12000</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2">
+                          <ul class="detail">
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                          </ul>
                         </div>
                       </div>
-
                     </div>
+
                   </div>
-                  <button class="carousel-control-prev" type="button"
-                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button"
-                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </section> -->
-    <!-- pricing -->
-    <!-- faq section -->
-    <section id="faq">
-      <div class="pricing-parent">
-        <div class="container">
-          <div class="pricing-column-parent">
-            <div class="pricing-column">
-              <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
-            </div>
-            <div class="pricing-clm">
-              <div class="pricing-ctn">
-                <div class="serviceline d-flex justify-content-center">
-                  <img class="line" src="../assets/img/line-1-1.svg" />
-                  <h1 style="color: black;"> <span>faq</span></h1>
-                  <img class="line" src="../assets/img/line-1-1.svg" />
-                </div>
-                <h1 class="pricing-heading">
-                  Frequently Asked Questions
-                </h1>
-                <div class="pricing-column-parent">
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Q No. 1) What does SL & TGT mean?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Ans - The full form of SL is Stop Loss and TGT is Target Price,
-                          where positions have to be closed or exited from.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Q No. 2) Is this firm registered under SEBI?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Ans – Yes, we are registered under the SEBI.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseThree" aria-expanded="false"
-                          aria-controls="flush-collapseThree">
-                          Q No. 3) What does CMP mean in trade recommendations?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Ans – CMP means Current Market Price available at that particular
-                          tim</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseFour" aria-expanded="false"
-                          aria-controls="flush-collapseThree">
-                          Q No. 4) What does revise SL mean in trade recommendations?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseFour" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Ans – CMP means Current Market Price available at that particular
-                          tim</div>
+                  <div class="carousel-item">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="stock-heading">
+                            <h1>Stocks Unnati</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore </p>
+                            <button class="read-more">Read More...</button>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <ul>
+                            <li>1 MONTH</li>
+                            <li>QUARTERLY</li>
+                            <li>HALF YEARLY</li>
+                            <li>YEARLY</li>
+                            <li>1 MONTH</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2">
+                          <ul>
+                            <li>12,000</li>
+                            <li>32,000</li>
+                            <li>60,000</li>
+                            <li>100000</li>
+                            <li>12000</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2">
+                          <ul class="detail">
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                            <li>Bank Detail</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
 
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseFive" aria-expanded="false"
-                          aria-controls="flush-collapseThree">
-                          Q No. 5) What does "sell below" mean in trade recommendations?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseFive" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Ans – “Sell below” is the entry level of any trade where the sell
-                          position should be initiated when the price breaks the 100 price level downwards. </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
-                          Q No. 6) What does "buy above" mean in trade recommendations?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseSix" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Ans – “Sell below” is the entry level of any trade where the sell
-                          position should be initiated when the price breaks the 100 price level downwards. </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
+                <button class="carousel-control-prev" type="button"
+                  data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                  data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
-
           </div>
+
         </div>
       </div>
+    </div>
 
-    </section>
-    <!-- faq section -->
-
-    <!-- testimonial section -->
-    <section id="testimonial">
-      <div class="testimonial-parent">
-        <!-- <div class="container"> -->
+  </section> -->
+  <!-- pricing -->
+  <!-- faq section -->
+  <section id="faq">
+    <div class="pricing-parent">
+      <div class="container">
         <div class="pricing-column-parent">
           <div class="pricing-column">
             <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
@@ -555,153 +472,109 @@
             <div class="pricing-ctn">
               <div class="serviceline d-flex justify-content-center">
                 <img class="line" src="../assets/img/line-1-1.svg" />
-                <h1 style="color: black;"> <span>Testimonial</span></h1>
+                <h1 style="color: black;"> <span>faq</span></h1>
                 <img class="line" src="../assets/img/line-1-1.svg" />
               </div>
               <h1 class="pricing-heading">
-                Lorem ipsum dolor sit
+                Frequently Asked Questions
               </h1>
-              <div class="container">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="cards-wrapper">
-                        <div class="card">
-                          <img src="../assets/img/rectangle-26-2.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-
-                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo con</p>
-                            <h5 class="card-title">Ad Minim Veniam,</h5>
-
-                          </div>
-                        </div>
-                        <div class="card ">
-                          <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-
-                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo con</p>
-                            <h5 class="card-title">Ad Minim Veniam,</h5>
-
-                          </div>
-                        </div>
-                        <div class="card ">
-                          <img src="../assets/img/rectangle-26.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-
-                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo con</p>
-                            <h5 class="card-title">Ad Minim Veniam,</h5>
-
-                          </div>
-                        </div>
-                      </div>
+              <div class="pricing-column-parent">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Q No. 1) What does SL & TGT mean?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Ans - The full form of SL is Stop Loss and TGT is Target Price,
+                        where positions have to be closed or exited from.</div>
                     </div>
-                    <div class="carousel-item">
-                      <div class="cards-wrapper">
-                        <div class="card">
-                          <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-
-                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo con</p>
-                            <h5 class="card-title">Ad Minim Veniam,</h5>
-
-                          </div>
-                        </div>
-                        <div class="card ">
-                          <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-
-                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo con</p>
-                            <h5 class="card-title">Ad Minim Veniam,</h5>
-
-                          </div>
-                        </div>
-                        <div class="card ">
-                          <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-
-                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo con</p>
-                            <h5 class="card-title">Ad Minim Veniam,</h5>
-
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Q No. 2) Is this firm registered under SEBI?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Ans – Yes, we are registered under the SEBI.</div>
                     </div>
-                    <div class="carousel-item">
-                      <div class="cards-wrapper">
-                        <div class="card">
-                          <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-
-                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo con</p>
-                            <h5 class="card-title">Ad Minim Veniam,</h5>
-
-                          </div>
-                        </div>
-                        <div class="card ">
-                          <img src="../assets/img/rectangle-26-2.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-
-                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo con</p>
-                            <h5 class="card-title">Ad Minim Veniam,</h5>
-
-                          </div>
-                        </div>
-                        <div class="card ">
-                          <img src="../assets/img/rectangle-26.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-
-                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo con</p>
-                            <h5 class="card-title">Ad Minim Veniam,</h5>
-
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        Q No. 3) What does CMP mean in trade recommendations?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Ans – CMP means Current Market Price available at that particular
+                        tim</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        Q No. 4) What does revise SL mean in trade recommendations?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Ans – CMP means Current Market Price available at that particular
+                        tim</div>
                     </div>
                   </div>
 
-                  <!-- Your existing HTML code for carousel controls -->
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <!-- <span class="visually-hidden" style="color: black;">Previous</span> -->
-                  </button>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        Q No. 5) What does "sell below" mean in trade recommendations?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Ans – “Sell below” is the entry level of any trade where the sell
+                        position should be initiated when the price breaks the 100 price level downwards. </div>
+                    </div>
+                  </div>
 
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <!-- <span class="visually-hidden">Next</span> -->
-                  </button>
-
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Q No. 6) What does "buy above" mean in trade recommendations?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Ans – “Sell below” is the entry level of any trade where the sell
+                        position should be initiated when the price breaks the 100 price level downwards. </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
         </div>
-        <!-- </div> -->
       </div>
+    </div>
 
-    </section>
-    <!-- testimonial section -->
+  </section>
+  <!-- faq section -->
 
+<<<<<<< Updated upstream
     <!--forms  -->
     <section id="form">
       <div class="form-parent">
@@ -778,159 +651,365 @@
               </div>
             </div>
           </div>
+=======
+  <!-- testimonial section -->
+  <section id="testimonial">
+    <div class="testimonial-parent">
+      <!-- <div class="container"> -->
+      <div class="pricing-column-parent">
+        <div class="pricing-column">
+          <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
+>>>>>>> Stashed changes
         </div>
-      </div>
-
-    </section>
-    <!-- forms -->
-    <!-- sebi -->
-    <section class="footer-section">
-      <div class="red-rectangle">Research Mart is a SEBI registered Research Analyst company</div>
-      <div class="group-30">
-        <div class="overlap-13">
-          <div class="rectangle-17"></div>
-          <div class="rectangle-18"></div>
-          <div class="group-31">
+        <div class="pricing-clm">
+          <div class="pricing-ctn">
+            <div class="serviceline d-flex justify-content-center">
+              <img class="line" src="../assets/img/line-1-1.svg" />
+              <h1 style="color: black;"> <span>Testimonial</span></h1>
+              <img class="line" src="../assets/img/line-1-1.svg" />
+            </div>
+            <h1 class="pricing-heading">
+              Lorem ipsum dolor sit
+            </h1>
             <div class="container">
-              <div class="sebi-parent">
-                <p class="SEBI-registered">
-                  <li> <span class="span">SEBI Registered Research Analyst Name : </span></li>
-                  <span class="text-wrapper-14">Research Mart Services Private Limited.</span>
-                </p>
-                <p class="type-of-registration">
-                  <li> <span class="span">Type of Registration : </span> <span class="text-wrapper-14">Non
-                      Individual</span>
-                  </li>
-                </p>
-                <p class="SEBI-registration-no">
-                  <li> <span class="span">SEBI Registration No. : </span> <span
-                      class="text-wrapper-14">INH000009694</span>
-                  </li>
-                </p>
-                <p class="validity-of">
-                  <li> <span class="span">Validity of Registration : </span>
-                    <span class="text-wrapper-14">Till it is suspended Or Cancelled by the SEBI board</span>
-                  </li>
-                </p>
-                <p class="office-address">
-                  <li><span class="span">Office Address : </span>
-                    <span class="text-wrapper-14">1003 Bhoomi Gardenia 2 Plot No.10 ,Sector 20 Navi Mumbai Pincode –
-                      410218,
-                      Maharashtra.</span>
-                  </li>
-                </p>
-                <p class="contact-details">
-                  <li>
-                    <span class="span">Contact Details : </span> <span class="text-wrapper-14">+919289276444</span>
-                  </li>
-                </p>
-                <p class="email-id-info">
-                  <li> <span class="span">Email id : </span> <span class="text-wrapper-14">examplegmail.com</span></li>
-                </p>
-                <p class="SEBI-regional-local">
-                  <li><span class="span">SEBI regional/local office address : </span>
-                    <span class="text-wrapper-14">SEBI Bhavan BKC, Plot No.C4-A, ‘G’ Block Bandra-Kurla Complex, Bandra
-                      (East),
-                      Mumbai – 400051,
-                      Maharashtra</span>
-                  </li>
-                </p>
-                <p class="CIN-NO">
-                  <li><span class="span">CIN NO : </span> <span class="text-wrapper-14">U67100MH2021PTC370293</span></li>
-                </p>
-                <li>
-                  <p class="GST"><span class="span">GST : </span> <span class="text-wrapper-14">27AALCR3977P1ZB</span></p>
-                </li>
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <img src="../assets/img/rectangle-26-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo con</p>
+                          <h5 class="card-title">Ad Minim Veniam,</h5>
+
+                        </div>
+                      </div>
+                      <div class="card ">
+                        <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo con</p>
+                          <h5 class="card-title">Ad Minim Veniam,</h5>
+
+                        </div>
+                      </div>
+                      <div class="card ">
+                        <img src="../assets/img/rectangle-26.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo con</p>
+                          <h5 class="card-title">Ad Minim Veniam,</h5>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo con</p>
+                          <h5 class="card-title">Ad Minim Veniam,</h5>
+
+                        </div>
+                      </div>
+                      <div class="card ">
+                        <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo con</p>
+                          <h5 class="card-title">Ad Minim Veniam,</h5>
+
+                        </div>
+                      </div>
+                      <div class="card ">
+                        <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo con</p>
+                          <h5 class="card-title">Ad Minim Veniam,</h5>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <img src="../assets/img/rectangle-26-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo con</p>
+                          <h5 class="card-title">Ad Minim Veniam,</h5>
+
+                        </div>
+                      </div>
+                      <div class="card ">
+                        <img src="../assets/img/rectangle-26-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo con</p>
+                          <h5 class="card-title">Ad Minim Veniam,</h5>
+
+                        </div>
+                      </div>
+                      <div class="card ">
+                        <img src="../assets/img/rectangle-26.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo con</p>
+                          <h5 class="card-title">Ad Minim Veniam,</h5>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Your existing HTML code for carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <!-- <span class="visually-hidden" style="color: black;">Previous</span> -->
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <!-- <span class="visually-hidden">Next</span> -->
+                </button>
+
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="footer-menu">
-            <div class="f-menu">
-              <h1 class="heading1">USEFUL LINK</h1>
-              <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">pricing</a></li>
-                <li><a href="">faq</a></li>
-                <li><a href="">contact us</a></li>
-              </ul>
-            </div>
-            <div class="f-menu">
-              <h1 class="heading1">SUPPORT</h1>
-              <ul>
-                <li><a href="">Investor Support</a></li>
-                <li><a href="">Grievance Handling</a></li>
-                <li><a href="">Standard Disclosures</a></li>
-                <li><a href="">Regulatory Disclosures</a></li>
-                <li><a href="">Corporate Governance</a></li>
-                <li><a href="">Complaint Data</a></li>
-                <li><a href="">Investor Charter</a></li>
-                <li><a href="">Disclaimer</a></li>
-              </ul>
-            </div>
-            <div class="f-menu">
-              <h1 class="heading1">CONTACT US</h1>
-              <!-- <div class="col-md-3"> -->
-              <div class="footer3-column">
-                <div class="footer3-ctn d-flex ">
-                  <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
-                  <div class="group-36">
-                    <div class="text-wrapper-23">Address</div>
-                    <p class="element-bhoomi-gardenia">
-                      1003 Bhoomi Gardenia 2 Plot No.10 ,sector 20 Navi Mumbai Pincode:-410218 Maharashtra.
-                    </p>
-                  </div>
-                </div>
-                <div class="footer3-ctn d-flex ">
-                  <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
-                  <div class="group-36">
-                    <div class="text-wrapper-23">Mobile</div>
-                    <p class="element-bhoomi-gardenia">
-                      +91 9289276444
-                    </p>
-                  </div>
-                </div>
-                <div class="footer3-ctn d-flex ">
-                  <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
-                  <div class="group-36">
-                    <div class="text-wrapper-23">Mail Us</div>
-                    <p class="element-bhoomi-gardenia">
-                      inforesearchmart.in
-                    </p>
-                  </div>
-                </div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+  </section>
+  <!-- testimonial section -->
+
+  <!--forms  -->
+  <section id="form">
+    <div class="form-parent">
+      <div class="container">
+        <div class="form-column-parent">
+          <div class="form-column">
+            <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
+          </div>
+          <div class="form-clm">
+            <div class="form-ctn">
+              <div class="serviceline d-flex justify-content-center">
+                <img class="line" src="../assets/img/line-1-1.svg" />
+                <h1 style="color: black;">Submit <span>Inquiry</span></h1>
+                <img class="line" src="../assets/img/line-1-1.svg" />
               </div>
-              <!-- </div> -->
+              <h1 class="pricing-heading text-center">
+                Contact Us
+              </h1>
+              <div class="form-parent">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Full Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter Your Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter Your Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Phone Number</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter Phone Number">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                      placeholder="Select Message"> </textarea>
+                  </div>
+                  <button type="submit" class="form btn-primary">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- sebi -->
-    <!-- footer -->
-    <div class="footer-end">
-
     </div>
-    <!-- footer -->
-  </body>
-  </html>
+
+  </section>
+  <!-- forms -->
+  <!-- sebi -->
+  <section class="footer-section">
+    <div class="red-rectangle">Research Mart is a SEBI registered Research Analyst company</div>
+    <div class="group-30">
+      <div class="overlap-13">
+        <div class="rectangle-17"></div>
+        <div class="rectangle-18"></div>
+        <div class="group-31">
+          <div class="container">
+            <div class="sebi-parent">
+              <p class="SEBI-registered">
+                <li> <span class="span">SEBI Registered Research Analyst Name : </span></li>
+                <span class="text-wrapper-14">Research Mart Services Private Limited.</span>
+              </p>
+              <p class="type-of-registration">
+                <li> <span class="span">Type of Registration : </span> <span class="text-wrapper-14">Non
+                    Individual</span>
+                </li>
+              </p>
+              <p class="SEBI-registration-no">
+                <li> <span class="span">SEBI Registration No. : </span> <span
+                    class="text-wrapper-14">INH000009694</span>
+                </li>
+              </p>
+              <p class="validity-of">
+                <li> <span class="span">Validity of Registration : </span>
+                  <span class="text-wrapper-14">Till it is suspended Or Cancelled by the SEBI board</span>
+                </li>
+              </p>
+              <p class="office-address">
+                <li><span class="span">Office Address : </span>
+                  <span class="text-wrapper-14">1003 Bhoomi Gardenia 2 Plot No.10 ,Sector 20 Navi Mumbai Pincode –
+                    410218,
+                    Maharashtra.</span>
+                </li>
+              </p>
+              <p class="contact-details">
+                <li>
+                  <span class="span">Contact Details : </span> <span class="text-wrapper-14">+919289276444</span>
+                </li>
+              </p>
+              <p class="email-id-info">
+                <li> <span class="span">Email id : </span> <span class="text-wrapper-14">examplegmail.com</span></li>
+              </p>
+              <p class="SEBI-regional-local">
+                <li><span class="span">SEBI regional/local office address : </span>
+                  <span class="text-wrapper-14">SEBI Bhavan BKC, Plot No.C4-A, ‘G’ Block Bandra-Kurla Complex, Bandra
+                    (East),
+                    Mumbai – 400051,
+                    Maharashtra</span>
+                </li>
+              </p>
+              <p class="CIN-NO">
+                <li><span class="span">CIN NO : </span> <span class="text-wrapper-14">U67100MH2021PTC370293</span></li>
+              </p>
+              <li>
+                <p class="GST"><span class="span">GST : </span> <span class="text-wrapper-14">27AALCR3977P1ZB</span></p>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-menu">
+          <div class="f-menu">
+            <h1 class="heading1">USEFUL LINK</h1>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">pricing</a></li>
+              <li><a href="">faq</a></li>
+              <li><a href="">contact us</a></li>
+            </ul>
+          </div>
+          <div class="f-menu">
+            <h1 class="heading1">SUPPORT</h1>
+            <ul>
+              <li><a href="">Investor Support</a></li>
+              <li><a href="">Grievance Handling</a></li>
+              <li><a href="">Standard Disclosures</a></li>
+              <li><a href="">Regulatory Disclosures</a></li>
+              <li><a href="">Corporate Governance</a></li>
+              <li><a href="">Complaint Data</a></li>
+              <li><a href="">Investor Charter</a></li>
+              <li><a href="">Disclaimer</a></li>
+            </ul>
+          </div>
+          <div class="f-menu">
+            <h1 class="heading1">CONTACT US</h1>
+            <!-- <div class="col-md-3"> -->
+            <div class="footer3-column">
+              <div class="footer3-ctn d-flex ">
+                <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
+                <div class="group-36">
+                  <div class="text-wrapper-23">Address</div>
+                  <p class="element-bhoomi-gardenia">
+                    1003 Bhoomi Gardenia 2 Plot No.10 ,sector 20 Navi Mumbai Pincode:-410218 Maharashtra.
+                  </p>
+                </div>
+              </div>
+              <div class="footer3-ctn d-flex ">
+                <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
+                <div class="group-36">
+                  <div class="text-wrapper-23">Mobile</div>
+                  <p class="element-bhoomi-gardenia">
+                    +91 9289276444
+                  </p>
+                </div>
+              </div>
+              <div class="footer3-ctn d-flex ">
+                <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
+                <div class="group-36">
+                  <div class="text-wrapper-23">Mail Us</div>
+                  <p class="element-bhoomi-gardenia">
+                    inforesearchmart.in
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- sebi -->
+  <!-- footer -->
+  <div class="footer-end">
+
+  </div>
+  <!-- footer -->
 
 
-  <!-- about section -->
-  <ng-template #content let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title">Dear Trader/ Investor</h4>
-      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <p>Please note that before processing any payment or service subscriptions, please check the business account or
-        account QR Code held in the name of Research Mart Services Pvt Ltd only , we do not have another account without
-        this name. Any Payments in other account , you will be responsible. Some scammers / Fraudster take Company name
-        on the social media platform (Telegram, Whatsapp, Instagram, etc.) to receive payments to their personal account
-        or another account . so please beware of scammers .</p>
-    </div>
-  </ng-template>
+
+<!-- about section -->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Dear Trader/ Investor</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Please note that before processing any payment or service subscriptions, please check the business account or
+      account QR Code held in the name of Research Mart Services Pvt Ltd only , we do not have another account without
+      this name. Any Payments in other account , you will be responsible. Some scammers / Fraudster take Company name
+      on the social media platform (Telegram, Whatsapp, Instagram, etc.) to receive payments to their personal account
+      or another account . so please beware of scammers .</p>
+  </div>
+</ng-template>
 </body>
 </html>
