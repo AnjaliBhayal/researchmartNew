@@ -82,7 +82,7 @@
     <div id="home">
       <section class="ban_sec">
         <div class="ban_img">
-          <img src="../assets/img/Group 111 (1).svg" alt="banner" border="0">
+          <img class="img-fluid" src="../assets/img/Group 111 (1).svg" alt="banner" border="0">
           <div class="container">
             <div class="row">
               <div class="first-column col-md-7 col-sm-12 col-lg-7">
@@ -106,7 +106,7 @@
                       </div>
                       <div class="form-group">
                         <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
-                          aria-describedby="emailHelp" placeholder="Enter Your pNumber" [ngClass]="{
+                          aria-describedby="emailHelp" placeholder="Enter Your Number" [ngClass]="{
                           'is-invalid': submittedb && b.pNumber.errors
                         }" />
                         <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
@@ -121,7 +121,7 @@
                       </div>
                       <div class="form-group">
                         <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
-                          aria-describedby="emailHelp" placeholder="Enter Your city" [ngClass]="{
+                          aria-describedby="emailHelp" placeholder="Enter Your C  ity" [ngClass]="{
                           'is-invalid': submittedb && b.citys.errors
                         }">
                         <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
@@ -151,7 +151,7 @@
           <div class="container">
             <div class="about-column-parent">
               <div class="about-column">
-                <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a>
+                <a href=""><img class="img-fluid" src="../assets/img/subtract-3.png" alt="" /></a>
               </div>
               <div class="about-clm">
                 <div class="about-ctn">
@@ -220,12 +220,16 @@
                       Nifty Raai (Nifty, FINNIFTY & Bank Nifty Index)
                     </div>
                   </div>
-
                 </div>
-                <div class="box1">
-                  <div class="box">
+                <div class="row">
+                  <div class="seb-image col-md-12 d-flex justify-content-center">
+                    <img class="img-fluid" src="../../../assets/img/rectangle-16.png" alt="">
                   </div>
-                </div>
+                </div>  
+                  <!-- <div class="box1">
+                    <div class="box">
+                    </div>
+                  </div> -->
               </div>
             </div>
           </div>
@@ -827,61 +831,66 @@
                 <h1 class="pricing-heading text-center">
                   Contact Us
                 </h1>
-                <div class="form-parent">
-                  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Full Name</label>
-                      <input type="text" class="form-control" formControlName="fullName" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
-                          'is-invalid': submitted && f.fullName.errors
-                        }" />
-                      <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
-                        <div *ngIf="f.fullName.errors.required"> Full Name is required</div>
-                      </div>
+                <div class="row">
+                  <div class="col-md-10  col-lg-6 col-sm-12">
+                    <div class="form-parent">
+                      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Full Name</label>
+                          <input type="text" class="form-control" formControlName="fullName" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
+                              'is-invalid': submitted && f.fullName.errors
+                            }" />
+                          <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+                            <div *ngIf="f.fullName.errors.required"> Full Name is required</div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email</label>
+                          <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
+                              'is-invalid': submitted && f.email.errors
+                            }">
+                          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                            <div *ngIf="f.email.errors.required"> Email is required</div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Phone Number</label>
+                          <input type="tel" class="form-control" formControlName="phone" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter Phone Number" [ngClass]="{
+                              'is-invalid': submitted && f.phone.errors
+                            }">
+                          <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                            <div *ngIf="f.phone.errors.required"> Phone Number is required</div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">City</label>
+                          <input type="text" class="form-control" formControlName="city" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter Phone Number" [ngClass]="{
+                              'is-invalid': submitted && f.city.errors
+                            }">
+                          <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                            <div *ngIf="f.city.errors.required"> city is required</div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Message</label>
+                          <textarea class="form-control" formControlName="message" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Select Message" [ngClass]="{
+                              'is-invalid': submitted && f.message.errors
+                            }"> </textarea>
+                          <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                            <div *ngIf="f.message.errors.required"> Message is required</div>
+                          </div>
+                        </div>
+                        <button type="submit" class="form btn-primary">Submit</button>
+                      </form>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email</label>
-                      <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
-                          'is-invalid': submitted && f.email.errors
-                        }">
-                      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                        <div *ngIf="f.email.errors.required"> Email is required</div>
-                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Phone Number</label>
-                      <input type="tel" class="form-control" formControlName="phone" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Enter Phone Number" [ngClass]="{
-                          'is-invalid': submitted && f.phone.errors
-                        }">
-                      <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
-                        <div *ngIf="f.phone.errors.required"> Phone Number is required</div>
-                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">City</label>
-                      <input type="text" class="form-control" formControlName="city" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Enter Phone Number" [ngClass]="{
-                          'is-invalid': submitted && f.city.errors
-                        }">
-                      <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
-                        <div *ngIf="f.city.errors.required"> city is required</div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Message</label>
-                      <textarea class="form-control" formControlName="message" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Select Message" [ngClass]="{
-                          'is-invalid': submitted && f.message.errors
-                        }"> </textarea>
-                      <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
-                        <div *ngIf="f.message.errors.required"> Message is required</div>
-                      </div>
-                    </div>
-                    <button type="submit" class="form btn-primary">Submit</button>
-                  </form>
-                </div>
+               
               </div>
             </div>
           </div>

@@ -261,7 +261,14 @@ h1.heading {
     background-position: top;
     background-repeat: no-repeat;
 }
-
+.seb-image {
+    background-color: white;
+    padding-top: 8%;
+}
+input#exampleInputEmail11 {
+    padding: 17px;
+    border-radius: unset;
+}
 .box {
     height: 470px;
     width: 100%;
@@ -331,10 +338,7 @@ p.card-text {
     width: 100%;
 }
 
-.form-column-parent {
-    width: 35%;
-    margin: 0 auto;
-}
+
 /* .first-column1.col-md-5 {
     background-image: url(../../src/assets/img/subtract-3.png);
     background-repeat: no-repeat;
@@ -347,7 +351,7 @@ button.btn a {
     text-decoration: none;
     color: white;
 }
-.form-control {
+/* .form-control {
     display: block;
     width: 100%;
     padding: .375rem .75rem;
@@ -363,7 +367,7 @@ button.btn a {
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius);
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
+} */
 
 label {
     font-weight: 500;

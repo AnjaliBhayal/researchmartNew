@@ -220,7 +220,7 @@
         width: 100%;
         max-width: 72px;
     }
-    .form-control {
+    /* .form-control {
         display: block;
         width: 76%;
         height: 20px;
@@ -237,7 +237,7 @@
         border: var(--bs-border-width) solid var(--bs-border-color);
         border-radius: var(--bs-border-radius);
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    }
+    } */
     button.form1 {
         padding: 13px 10px;
         width: 76%;
