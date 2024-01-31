@@ -121,7 +121,7 @@ button.btn:hover {
 
 .about-ctn p {
     color: #000;
-    /* font-family: "DM Serif Display"; */
+    font-family: "DM Serif Display";
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -989,206 +989,110 @@ header.offcanvas-menu {
     padding-top: 110px;
 }
 
-/*===============================================
-            Smart phone and tablets
-===============================================*/
+.footer-end {
+    height: 100px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
 
-@media(max-width:767px) {
-    .about-column-parent {
-        display: block;
-    }
-    .footer-menu {
-        display: flex;
-        justify-content: center;
-        padding-top: 45px;
-    }
-    .about-clm {
-        width: 100%;
-        /* text-align: center; */
-    }
-    .line.d-flex {
-        /* margin-bottom: 70px; */
-        margin-bottom: 0;
-    }
-    .about-clm {
-        padding-top: 29px;
-    }button.btn {
-        margin-top: 30px;
-    }
-    .banner-ctn h1 {
-        font-size: 23px;
-        /* padding-top: 151px; */
-        max-width: 365px;
-        line-height: 32px;
-    }
-    input#exampleInputEmail1 {
-        padding: 8px 13px;
-        border-radius: 0;
-    }
-    button.form1 {
-        padding: 4px 10px;
-    }
-    button.get-btn1 {
-        color: rgb(255, 255, 255);
-        padding: 6px 10px;
-        background: linear-gradient(
-          180deg,
-          rgb(218, 0, 0) 29.41%,
-          rgb(114.75, 0, 0) 100%);
-        border-radius: inherit;
-        font-size: 16px;
-        border: none;
-    }
-    .footer-menu {
-        display: block;
-        justify-content: center;
-        padding-top: 45px;
-    }
-    .services-column-parent {
-        flex-direction: row;
-      }
-    
-      .services-clm {
-        flex-direction: column;
-      }
-    
-      .heading {
-        font-size: 36px;
-      }
-    
-      .service-btn {
-        font-size: 16px;
-      }
-    
-      .rectangle {
-        margin-bottom: 0;
-      }
-      nav.header-section {
-        display: none;
-    }
-    nav.header-section {
-        display: none;
-    }
-    .red-rectangle {
-
-        height: 68px;
-    }
-    .header-parent {
-        display: none;
-    }.banner-ctn {
-        max-width: 254px;
-    }.container, .container-sm {
-        max-width: 1170px;
-    }
+/* jdcbhbvdsihbvchdsbvdc */
+.footer-column {
+    display: flex;
+    align-items: center;
 }
 
 
-/*===============================================
-            Small screen
-===============================================*/
-
-@media(min-width:768px) and (max-width:991px) {
-
-    .about-column-parent {
-        display: block;
-    }
-    .footer-menu {
-        display: flex;
-        justify-content: center;
-        padding-top: 45px;
-    }
-    .about-clm {
-        width: 100%;
-        /* text-align: center; */
-    }
-    .line.d-flex {
-        /* margin-bottom: 70px; */
-        margin-bottom: 0;
-    }
-    .about-clm {
-        padding-top: 29px;
-    }button.btn {
-        margin-top: 30px;
-    }
-    .banner-ctn h1 {
-        font-size: 23px;
-        /* padding-top: 151px; */
-        max-width: 365px;
-        line-height: 32px;
-    }
-    input#exampleInputEmail1 {
-        padding: 8px 13px;
-        border-radius: 0;
-    }
-    button.form1 {
-        padding: 4px 10px;
-    }
-    button.get-btn1 {
-        color: rgb(255, 255, 255);
-        padding: 6px 10px;
-        background: linear-gradient(
-          180deg,
-          rgb(218, 0, 0) 29.41%,
-          rgb(114.75, 0, 0) 100%);
-        border-radius: inherit;
-        font-size: 16px;
-        border: none;
-    }
-    .footer-menu {
-        display: block;
-        justify-content: center;
-        padding-top: 45px;
-    }
-    .services-column-parent {
-        flex-direction: row;
-      }
-    
-      .services-clm {
-        flex-direction: column;
-      }
-    
-      .heading {
-        font-size: 36px;
-      }
-    
-      .service-btn {
-        font-size: 16px;
-      }
-    
-      .rectangle {
-        margin-bottom: 0;
-      }
-      nav.header-section {
-        display: none;
-    }
-    nav.header-section {
-        display: none;
-    }
-    .red-rectangle {
-
-        height: 68px;
-    }
-    .header-parent {
-        display: none;
-    }
-    .banner-ctn {
-        max-width: 254px;
-    }
-    .container, .container-sm {
-        max-width: 1170px;
-    }
-
+.footer-parent-column {
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.second-footer-icon ul {
+    display: flex;
+}
 
-/*===============================================
-            Medium screen
-===============================================*/
+.second-footer-icon li {
+    margin: 0 14px;
+    list-style: none;
+}
 
-@media(min-width:992px) and (max-width:1199px) {}
+.second-footer {
+    padding-top: 24px;
+    border-top: 1px solid grey;
+}
 
+.footer-location-ctn {
+    color: rgb(0, 0, 0);
+    margin-left: 14px;
+    font-size: 10px;
+}
 
-/*===============================================
-            Large screen
-===============================================*/
+.footer-ctn {
+    color: rgb(0, 0, 0);
+    margin-left: 14px;
+    font-size: 10px;
+}
 
+.second-footer-ctn {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.foot {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.second-footer-icon img {
+    height: 100%;
+    width: 100%;
+    max-width: 23px;
+    background-color: rgb(0, 0, 0);
+    padding: 3px 8px;
+    border-radius: 41px;
+}
+
+.service-img a {
+    border: none !important;
+    background-color: rgb(31 32 34 / 50%) !important;
+    padding: 30px;
+    height: 350px;
+    display: flex !important;
+    align-items: center;
+}
+
+.about-clm {
+    width: 50%;
+    display: grid;
+    justify-content: center;
+}
+
+.foot-column-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo p {
+    max-width: 370px;
+    font-size: 14px;
+}
+
+.footer-location-1 a {
+    border: 1px solid red;
+    border-radius: 34px;
+    text-align: center;
+    margin: 0 5px;
+    height: 50px;
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    padding: 11px 11px;
+    align-items: center;
+}
+
+.footer-location-1 {
+    display: flex;
+}
