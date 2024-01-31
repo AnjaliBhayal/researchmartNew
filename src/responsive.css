@@ -125,9 +125,15 @@
         width: 100%;
         max-width: 72px;
     }
+    .modal-content {
+        width: 92%;
+    }
 }
 
 @media(max-width:500px) {
+    .modal-content {
+        width: 92%;
+    }
     .banner-ctn h1 {
         font-size: 18px;
         max-width: 299px;
@@ -239,6 +245,9 @@
 ===============================================*/
 
 @media(min-width:768px) and (max-width:991px) {
+    .modal-content {
+        width: 92%;
+    }
 
     /*-- about --*/
     .about .my__img {

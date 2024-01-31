@@ -276,11 +276,21 @@ body {
 } */
 $filter-color_1: #121212;
 $color_1: #fff;
+$background-color_1: rgb(206, 17, 17);
+$background-color_2: rgb(0, 140, 255);
+$background-color_3: rgb(10, 184, 111);
+$background-color_4: rgb(211, 122, 7);
+$background-color_5: rgb(118, 163, 12);
+$background-color_6: rgb(180, 10, 47);
+$background-color_7: rgb(35, 99, 19);
+$background-color_8: rgb(0, 68, 255);
+$background-color_9: rgb(218, 12, 218);
+$background-color_10: rgb(54, 94, 77);
 .carousel-container {
   width: 100%;
   overflow: hidden;
   position: relative;
-  // height: 100vh;
+  height: 100vh;
   background-size: cover;
 }
 .filter {
@@ -306,7 +316,7 @@ $color_1: #fff;
 .main-container{
   width: 100%;
   position: relative;
-  // height: 100vh;
+  height: 100vh;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
@@ -329,5 +339,40 @@ $color_1: #fff;
   font-size: 22px;
   font-weight: bold;
   color: $color_1;
- 
+  &:nth-child(1n) {
+    background-color: $background-color_1;
+  }
+  &:nth-child(2n) {
+    background-color: $background-color_2;
+  }
+  &:nth-child(3n) {
+    background-color: $background-color_3;
+  }
+  &:nth-child(4n) {
+    background-color: $background-color_4;
+  }
+  &:nth-child(5n) {
+    background-color: $background-color_5;
+  }
+  &:nth-child(6n) {
+    background-color: $background-color_6;
+  }
+  &:nth-child(7n) {
+    background-color: $background-color_7;
+  }
+  &:nth-child(8n) {
+    background-color: $background-color_8;
+  }
+  &:nth-child(9n) {
+    background-color: $background-color_9;
+  }
+  &:nth-child(10n) {
+    background-color: $background-color_10;
+  }
+}
+
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
 }

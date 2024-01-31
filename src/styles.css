@@ -1,4 +1,8 @@
 @import 'swiper/swiper-bundle.css';
+*{
+    margin: 0;
+    padding: 0;
+}
 .about-column-parent {
     display: flex;
     align-items: center;
@@ -317,10 +321,10 @@ img.testimonial {
 
 p.card-text {
     font-size: 13px;
-    padding-top: 25px;
+    max-width: 350px;
+    /* padding-top: 25px; */
     color: black;
 }
-
 /* testimonial */
 .form-group {
     margin: 16px 0;
@@ -710,9 +714,19 @@ button.read-more {
 }
 
 .stock-heading {
-    text-align: start;
+    /* text-align: start; */
+    font-size: 30px;
 }
-
+.card-body {
+    flex: 1 1 auto;
+}
+.card {
+    padding: 40px;
+}
+.card-body {
+    padding: 0;
+    margin: 0;
+}
 button.close {
     border: none;
     background: none;
@@ -1095,4 +1109,59 @@ header.offcanvas-menu {
 
 .footer-location-1 {
     display: flex;
+}
+
+/* pricing */
+.price-detail li {
+    list-style: none;
+    margin: 15px 0;
+}
+.bank-btn a {
+    color: rgb(255, 255, 255);
+    border: none;
+    text-decoration: none;
+}
+.bank-btn  {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background: linear-gradient(180deg,
+            rgb(218, 0, 0) 29.41%,
+            rgb(114.75, 0, 0) 100%);
+    border-radius: inherit;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+}
+.bank-read {
+    padding-top: 11px;
+}
+.bank-read a {
+    text-decoration: none;
+    color: #c40000;
+    font-weight: 500;
+}
+.price-detail li {
+    list-style: none;
+    margin: 15px 0;
+    font-weight: 500;
+}
+.price-detail {
+    text-align: start;
+}
+.gst {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+.gst h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.price-detail li span {
+    color: #c40000;
+    font-weight: 500;
 }
