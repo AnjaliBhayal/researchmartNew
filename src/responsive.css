@@ -86,7 +86,7 @@
 
     .about-column img {
         height: 100%;
-        /* max-width: 399px; */
+        max-width: 399px;
     }
 
     .red-rectangle {
