@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core'
+import { Component, ElementRef, OnInit, ViewChild,HostListener  } from '@angular/core'
 import {
   FormGroup,
   FormBuilder,
@@ -8,6 +8,7 @@ import {
 } from "@angular/forms";import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AdminServiceService } from 'app/Services/admin-service.service';
 import { ToastrService } from 'ngx-toastr';
+import { Swiper } from 'swiper';
 
 @Component({
   selector: 'app-home',
@@ -22,6 +23,49 @@ export class HomeComponent implements OnInit {
   public contentHeader: object
   submitted = false;
   submittedb=false;
+  isLargeScreen: boolean = true;
+  private addSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('mousedown', function (e) {
+        e.preventDefault();
+  
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+  
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  }
+  swiperBGFuction() {
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        waitForTransition: true,
+      },
+      speed: 3000,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true,
+      },
+    });
+  }
+  swiperCardFunction() {
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 3,
+      loop: true,
+      speed: 1500,
+      autoplay: {
+        delay: 3000,
+      },
+      effect: 'slide',
+      grabCursor: true,
+    });
+  }
+  
   // Lifecycle Hooks
   // -----------------------------------------------------------------------------------------------------
 
@@ -29,8 +73,12 @@ export class HomeComponent implements OnInit {
    * On init
    */
   ngOnInit() {
+    this.addSmoothScroll();
+    this.checkScreenSize();
+    this.swiperBGFuction();
+    this.swiperCardFunction();
     
-    this.toastr.success("data.message","Success!");
+    // this.toastr.success("data.message","Success!");
 
   //   {
   //     "fullName": "Sahil Singh",
@@ -39,6 +87,7 @@ export class HomeComponent implements OnInit {
   //     "city": "Indore",
   //     "message": "Hello"
   // }
+  
     this.contactForm = this.fb.group({
       fullName: new FormControl("", [Validators.required]),
       email: new FormControl("", [Validators.required]),
@@ -79,6 +128,13 @@ export class HomeComponent implements OnInit {
         ]
       }
     }
+  }
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenSize();
+  }
+  checkScreenSize() {
+    this.isLargeScreen = window.innerWidth > 1100; // Adjust the breakpoint as needed
   }
   get f() {
     return this.contactForm.controls;
@@ -154,4 +210,5 @@ export class HomeComponent implements OnInit {
         });  
     }
   }
+  
 }

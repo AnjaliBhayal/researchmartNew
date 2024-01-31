@@ -1,48 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<!-- <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
+</head> -->
 
 <body>
-  <!-- <header class="header">
-    <div class="container "> 
-      <div class="header-parent" d>
-        <div class="header-logo">
-          <a href=""><img src="../assets/img/background-1.svg" alt="" /></a>
-        </div>
-        <div class="menu">
-          <ul>
-            <li class ="home">Home</li>
-            <li class ="about-us">About Us</li>
-            <li class ="pricing">Pricing</li>
-            <li class ="contact-us">Contact Us</li>
-          </ul>
-        </div>
-        <div class="get-btn">
-          <button>Get in Touch</button>
-        </div>
-      </div>
-    </div>
-  </header> -->
-
   <!DOCTYPE html>
   <html lang="en">
 
-<!--   <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </head> -->
-
   <body>
-
-    <nav class="header-section">
+    <!-- header -->
+    <nav class="header-section" *ngIf="isLargeScreen">
       <div class="container">
         <div class="header-parent">
           <div class="header-logo col-sm-3 col-md-2 col-lg-2">
@@ -51,161 +22,161 @@
           <div class="header-menu col-sm-3 col-md-7 col-lg-7">
             <ul class="d-flex align-item-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+              </li>
+              
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                <a class="nav-link active" aria-current="page" href="#services">Services</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact us</a>
-              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#form">Contact us</a>
+              </li> -->
             </ul>
           </div>
           <div class="get-btn col-sm-3 col-md-3 col-lg-3">
-            <button class="get-btn1" type="button">Get in Touch</button>
+            <button class="get-btn1" type="button"><a href="#form">Contact Us</a></button>
           </div>
         </div>
       </div>
     </nav>
-    <header class="offcanvas-menu">
-      <div class="container-fluid">
-      <div class="logo-icon">
+    <!-- header -->
+
+    <!-- second header -->
+    <header class="offcanvas-menu" *ngIf="!isLargeScreen">
+      <div class="container">
+        <div class="logo-icon">
           <div class="logo">
-              <img src="image/Layer 13.png" alt="">
+            <a><img src="../assets/img/logo-02.svg " alt="" /></a>
           </div>
-          <div class="icon-menu">
-              <a href="">login</a>
-              <a href=""><img src="image/ .png" alt=""></a>    
-          </div>
-      </div>
+        </div>
       </div>
       <input type="checkbox" id="toogle-menu" />
-  
+
       <label for="toogle-menu" class="toogle-open"><span></span></label>
       <nav>
-          <div>
-              <a href="#"> <i class="fab fa-css3-alt"></i><img src="image/Layer 13.png" alt=""> </a>
-              <label for="toogle-menu" class="toogle-close">
-                  <span></span>
-              </label>
-          </div>
-          <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us </a></li>
-              <li><a href="">Pricing </a></li>
-              <li><a href="">Contact us </a></li>
-              <!-- <li><a href="#section5">CONTACT </a></li> -->
-          </ul>
+        <div>
+          <a href="#"> <i class="fab fa-css3-alt"></i><img src="image/Layer 13.png" alt=""> </a>
+          <label for="toogle-menu" class="toogle-close">
+            <span></span>
+          </label>
+        </div>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us </a></li>
+          <li><a href="">Pricing </a></li>
+          <li><a href="">Contact us </a></li>
+        </ul>
       </nav>
-      
-  </header>
-  
-    <section class="ban_sec">
-      <!-- <div class="container"> -->
+    </header>
+    <!-- second header -->
+
+
+    <!-- banner section-->
+    <div id="home">
+      <section class="ban_sec">
         <div class="ban_img">
           <img src="../assets/img/Group 111 (1).svg" alt="banner" border="0">
-        <div class="container">
-          <div class="ban_text">
-           
-            <div class="banner-ctn">
-              <h1>
-                Unlock Your Path to Profit With Our Stock Recommendations
-              </h1>
-            </div>
-            <div class="form-parent">
-              <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
-                <div class="form-group">
-                  <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11" aria-describedby="emailHelp"
-                    placeholder="Enter Your Name" [ngClass]="{
+          <div class="container">
+            <div class="ban_text">
+
+              <div class="banner-ctn">
+                <h1>
+                  Unlock Your Path to Profit With Our Stock Recommendations
+                </h1>
+              </div>
+              <div class="form-parent">
+                <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
+                  <div class="form-group">
+                    <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
+                      aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
                       'is-invalid': submittedb && b.name.errors
                     }" />
                     <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
-                      <div *ngIf="b.name.errors.required" > Full Name is required</div>
+                      <div *ngIf="b.name.errors.required"> Full Name is required</div>
                     </div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11" aria-describedby="emailHelp"
-                    placeholder="Enter Your pNumber" [ngClass]="{
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
+                      aria-describedby="emailHelp" placeholder="Enter Your pNumber" [ngClass]="{
                       'is-invalid': submittedb && b.pNumber.errors
                     }" />
                     <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
-                      <div *ngIf="b.pNumber.errors.required" > Phone Number is required</div>
+                      <div *ngIf="b.pNumber.errors.required"> Phone Number is required</div>
                       <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
                         Mobile Number requied only 10 characters.
+                      </div>
+                      <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
+                        Mobile Number requied only 10 characters.
+                      </div>
                     </div>
-                    <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
-                      Mobile Number requied only 10 characters.
                   </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control"  formControlName="citys" id="exampleInputEmail11" aria-describedby="emailHelp"
-                    placeholder="Enter Your city"  [ngClass]="{
+                  <div class="form-group">
+                    <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
+                      aria-describedby="emailHelp" placeholder="Enter Your city" [ngClass]="{
                       'is-invalid': submittedb && b.citys.errors
-                    }" >
+                    }">
                     <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
-                      <div *ngIf="b.citys.errors.required" > City is required</div>
+                      <div *ngIf="b.citys.errors.required"> City is required</div>
                     </div>
-                </div>
-                <button type="submit" class="form1">Submit</button>
-              </form>
-            </div>
-    
-           
-          </div>
-        </div>
-        </div>
-      <!-- </div> -->
-    </section>
-    <!--   <section class="banner">
-      <div class="container-fluid">
-        <div class="banner-parent">
-          <div class="container">
-            
-          </div>
-          
-        </div>
-      </div>
-    </section> -->
-
-    <section id="about">
-      <div class="about-parent">
-        <div class="container">
-          <div class="about-column-parent">
-            <div class="about-column">
-              <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a>
-            </div>
-            <div class="about-clm">
-              <div class="about-ctn">
-                <div class="line d-flex">
-                  <img class="line" src="../assets/img/line-1-1.svg" />
-                  <h1>About <span>Us</span></h1>
-                </div>
-                <p>
-                  At Research Mart, Our Mission Is To Provide Top-Class Stock Recommendations ,
-                  Through Top-Class Thorough Research.
-                </p>
-
-                <button class="btn">Contact Us</button>
-
+                  </div>
+                  <button type="submit" class="form1">Submit</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <!-- banner section -->
+
+
+    <!-- about section -->
+    <div id="about">
+      <section id="about">
+        <div class="about-parent">
+          <div class="container">
+            <div class="about-column-parent">
+              <div class="about-column">
+                <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a>
+              </div>
+              <div class="about-clm">
+                <div class="about-ctn">
+                  <div class="line d-flex">
+                    <img class="line" src="../assets/img/line-1-1.svg" />
+                    <h1>About <span>Us</span></h1>
+                  </div>
+                  <p>
+                    At Research Mart, Our Mission Is To Provide Top-Class Stock Recommendations ,
+                    Through Top-Class Thorough Research.
+                  </p>
+
+                  <button class="btn"><a href="#form">Contact Us</a></button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- about section -->
+
+    <!-- services section -->
 
     <section id="services">
       <div class="services-parent">
         <div class="container">
           <div class="services-column-parent">
             <div class="services-column">
-              <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
             </div>
-            <div class="services-clm d-flex align-item-center justify-content-between">
+            <div class="services-clm">
               <div class="services-ctn">
                 <div class="serviceline d-flex">
                   <img class="line" src="../assets/img/line-1-1.svg" />
@@ -214,7 +185,6 @@
                 <h1 class="heading">
                   Our Services
                 </h1>
-
               </div>
               <div class="btn-column">
                 <button class="service-btn">View all Services</button>
@@ -243,24 +213,24 @@
                       Nifty Raai (Nifty, FINNIFTY & Bank Nifty Index)
                     </div>
                   </div>
-                 
+
                 </div>
-                  <div class="box1">
-                    <div class="box">
-                    </div>
+                <div class="box1">
+                  <div class="box">
                   </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
+    <!-- services section -->
 
 
 
-    <!-- pricing -->
-    <!-- <section id="pricing">
+    <!-- pricing section -->
+    <section id="pricing">
       <div class="pricing-parent">
         <div class="container">
           <div class="pricing-column-parent">
@@ -276,166 +246,23 @@
                 <h1 class="pricing-heading">
                   Pricing
                 </h1>
-                <div class="pricing-box">
-
-                </div>
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
-                  data-bs-interval="false">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-
-                      <div class="card">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="stock-heading">
-                              <h1>Stocks Unnati</h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore </p>
-                              <button class="read-more">Read More...</button>
-                            </div>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>1 MONTH</li>
-                              <li>QUARTERLY</li>
-                              <li>HALF YEARLY</li>
-                              <li>YEARLY</li>
-                              <li>1 MONTH</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>12,000</li>
-                              <li>32,000</li>
-                              <li>60,000</li>
-                              <li>100000</li>
-                              <li>12000</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul class="detail">
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="card">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="stock-heading">
-                              <h1>Stocks Unnati</h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore </p>
-                              <button class="read-more">Read More...</button>
-                            </div>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>1 MONTH</li>
-                              <li>QUARTERLY</li>
-                              <li>HALF YEARLY</li>
-                              <li>YEARLY</li>
-                              <li>1 MONTH</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>12,000</li>
-                              <li>32,000</li>
-                              <li>60,000</li>
-                              <li>100000</li>
-                              <li>12000</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul class="detail">
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="carousel-item">
-                      <div class="card">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="stock-heading">
-                              <h1>Stocks Unnati</h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore </p>
-                              <button class="read-more">Read More...</button>
-                            </div>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>1 MONTH</li>
-                              <li>QUARTERLY</li>
-                              <li>HALF YEARLY</li>
-                              <li>YEARLY</li>
-                              <li>1 MONTH</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul>
-                              <li>12,000</li>
-                              <li>32,000</li>
-                              <li>60,000</li>
-                              <li>100000</li>
-                              <li>12000</li>
-                            </ul>
-                          </div>
-                          <div class="col-md-2">
-                            <ul class="detail">
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                              <li>Bank Detail</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button"
-                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button"
-                    data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
+                
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
-    </section> -->
-    <!-- pricing -->
+    </section>
+    <!-- pricing section -->
+
+
     <!-- faq section -->
     <section id="faq">
       <div class="pricing-parent">
         <div class="container">
           <div class="pricing-column-parent">
             <div class="pricing-column">
-              <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
             </div>
             <div class="pricing-clm">
               <div class="pricing-ctn">
@@ -535,21 +362,19 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
     </section>
     <!-- faq section -->
+
+
 
     <!-- testimonial section -->
     <section id="testimonial">
       <div class="testimonial-parent">
-        <!-- <div class="container"> -->
         <div class="pricing-column-parent">
           <div class="pricing-column">
-            <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
           </div>
           <div class="pricing-clm">
             <div class="pricing-ctn">
@@ -694,22 +519,19 @@
               </div>
             </div>
           </div>
-
         </div>
-        <!-- </div> -->
       </div>
-
     </section>
     <!-- testimonial section -->
+
+
 
     <!--forms  -->
     <section id="form">
       <div class="form-parent">
         <div class="container">
           <div class="form-column-parent">
-            <div class="form-column">
-              <!-- <a href=""><img src="../assets/img/subtract-3.png" alt="" /></a> -->
-            </div>
+            <div class="form-column"> </div>
             <div class="form-clm">
               <div class="form-ctn">
                 <div class="serviceline d-flex justify-content-center">
@@ -721,56 +543,56 @@
                   Contact Us
                 </h1>
                 <div class="form-parent">
-                  <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Full Name</label>
-                      <input type="text" class="form-control" formControlName="fullName" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter Your Name" [ngClass]="{
+                      <input type="text" class="form-control" formControlName="fullName" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
                           'is-invalid': submitted && f.fullName.errors
                         }" />
-                        <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
-                          <div *ngIf="f.fullName.errors.required"> Full Name is required</div>
-                        </div>
+                      <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+                        <div *ngIf="f.fullName.errors.required"> Full Name is required</div>
+                      </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Email</label>
-                      <input type="email" class="form-control"  formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter Your Name" [ngClass]="{
+                      <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
                           'is-invalid': submitted && f.email.errors
-                        }" >
-                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                          <div *ngIf="f.email.errors.required"> Email is required</div>
-                        </div>
+                        }">
+                      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required"> Email is required</div>
+                      </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Phone Number</label>
-                      <input type="tel" class="form-control" formControlName="phone" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter Phone Number" [ngClass]="{
+                      <input type="tel" class="form-control" formControlName="phone" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter Phone Number" [ngClass]="{
                           'is-invalid': submitted && f.phone.errors
                         }">
-                        <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
-                          <div *ngIf="f.phone.errors.required"> Phone Number is required</div>
-                        </div>
+                      <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                        <div *ngIf="f.phone.errors.required"> Phone Number is required</div>
+                      </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">City</label>
-                      <input type="text" class="form-control" formControlName="city" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter Phone Number" [ngClass]="{
+                      <input type="text" class="form-control" formControlName="city" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter Phone Number" [ngClass]="{
                           'is-invalid': submitted && f.city.errors
                         }">
-                        <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
-                          <div *ngIf="f.city.errors.required"> city is required</div>
-                        </div>
+                      <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                        <div *ngIf="f.city.errors.required"> city is required</div>
+                      </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlTextarea1">Message</label>
-                      <textarea class="form-control"  formControlName="message" id="exampleFormControlTextarea1" rows="3"
+                      <textarea class="form-control" formControlName="message" id="exampleFormControlTextarea1" rows="3"
                         placeholder="Select Message" [ngClass]="{
                           'is-invalid': submitted && f.message.errors
                         }"> </textarea>
-                        <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
-                          <div *ngIf="f.message.errors.required"> Message is required</div>
-                        </div>
+                      <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                        <div *ngIf="f.message.errors.required"> Message is required</div>
+                      </div>
                     </div>
                     <button type="submit" class="form btn-primary">Submit</button>
                   </form>
@@ -780,12 +602,15 @@
           </div>
         </div>
       </div>
-
     </section>
     <!-- forms -->
-    <!-- sebi -->
+
+
+    <!-- Footer section -->
     <section class="footer-section">
-      <div class="red-rectangle">Research Mart is a SEBI registered Research Analyst company</div>
+      <div class="container">
+        <div class="red-rectangle">Research Mart is a SEBI registered Research Analyst company</div>
+      </div>
       <div class="group-30">
         <div class="overlap-13">
           <div class="rectangle-17"></div>
@@ -836,10 +661,12 @@
                   </li>
                 </p>
                 <p class="CIN-NO">
-                  <li><span class="span">CIN NO : </span> <span class="text-wrapper-14">U67100MH2021PTC370293</span></li>
+                  <li><span class="span">CIN NO : </span> <span class="text-wrapper-14">U67100MH2021PTC370293</span>
+                  </li>
                 </p>
                 <li>
-                  <p class="GST"><span class="span">GST : </span> <span class="text-wrapper-14">27AALCR3977P1ZB</span></p>
+                  <p class="GST"><span class="span">GST : </span> <span class="text-wrapper-14">27AALCR3977P1ZB</span>
+                  </p>
                 </li>
               </div>
             </div>
@@ -870,10 +697,9 @@
             </div>
             <div class="f-menu">
               <h1 class="heading1">CONTACT US</h1>
-              <!-- <div class="col-md-3"> -->
               <div class="footer3-column">
                 <div class="footer3-ctn d-flex ">
-                  <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
+                  <a href=""><img src="../assets/img/fluent-location-24-filled.svg" alt=""></a>
                   <div class="group-36">
                     <div class="text-wrapper-23">Address</div>
                     <p class="element-bhoomi-gardenia">
@@ -882,7 +708,7 @@
                   </div>
                 </div>
                 <div class="footer3-ctn d-flex ">
-                  <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
+                  <a href=""><img src="../assets/img/ion-call.svg" alt=""></a>
                   <div class="group-36">
                     <div class="text-wrapper-23">Mobile</div>
                     <p class="element-bhoomi-gardenia">
@@ -891,7 +717,7 @@
                   </div>
                 </div>
                 <div class="footer3-ctn d-flex ">
-                  <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
+                  <a href=""><img src="../assets/img/tabler-mail-filled.svg" alt=""></a>
                   <div class="group-36">
                     <div class="text-wrapper-23">Mail Us</div>
                     <p class="element-bhoomi-gardenia">
@@ -900,23 +726,63 @@
                   </div>
                 </div>
               </div>
-              <!-- </div> -->
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- sebi -->
-    <!-- footer -->
-    <div class="footer-end">
+    <!-- footer section -->
 
-    </div>
-    <!-- footer -->
+
+    <!-- footer end -->
+    <section class="footer">
+      <div class="footer-parent">
+        <div class="container">
+          <div class="footer-parent-column">
+            <div class="footer-logo">
+              <p>Investments in securities are subject to market risks, which includes price fluctuation risk. There is
+                no assurance or guarantee that the objectives of any of the products mentioned in this document or on
+                this site will be achieved.</p>
+            </div>
+            <div class="footer-column">
+              <div class="footer-location">
+                <a href=""><img src="../../../assets/img/background.svg  " alt=""></a>
+              </div>
+            </div>
+
+            <div class="footer2-column">
+              <div class="footer-location-1">
+                <a href=""><img src="../assets/img/streamline-instagram-solid.svg" alt=""></a>
+                <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
+                <a href=""><img src="../assets/img/bxl-facebook.svg" alt=""></a>
+                <a href=""><img src="../assets/img/akar-icons-linkedin-fill.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-footer">
+        <div class="container">
+          <div class="foot-column-parent">
+            <div class="second-footer-ctn">
+              <p>Copyright 2023 all rights reserved</p>
+            </div>
+
+            <div class="foot">
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
   </body>
+
   </html>
 
 
-  <!-- about section -->
+  <!--  section modal-->
   <ng-template #content let-modal>
     <div class="modal-header">
       <h4 class="modal-title">Dear Trader/ Investor</h4>
@@ -932,5 +798,8 @@
         or another account . so please beware of scammers .</p>
     </div>
   </ng-template>
+  <!--  section modal-->
+
 </body>
+
 </html>

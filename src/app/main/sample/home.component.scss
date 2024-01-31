@@ -274,3 +274,60 @@ body {
     left: 2%;
   }
 } */
+$filter-color_1: #121212;
+$color_1: #fff;
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  // height: 100vh;
+  background-size: cover;
+}
+.filter {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $filter-color_1;
+  z-index: 2;
+  filter: opacity(0.5);
+}
+.carousel {
+  display: flex;
+  height: 100%;
+  transition: transform 1s;
+}
+.carousel-slide {
+  flex: 0 0 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container{
+  width: 100%;
+  position: relative;
+  // height: 100vh;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  background-size: cover;
+}
+
+.swiper {
+  padding: 40px;
+  width: 60%;
+  height: 60%;
+}
+
+.swiper-slide-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: $color_1;
+ 
+}
