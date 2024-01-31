@@ -335,7 +335,18 @@ p.card-text {
     width: 35%;
     margin: 0 auto;
 }
-
+/* .first-column1.col-md-5 {
+    background-image: url(../../src/assets/img/subtract-3.png);
+    background-repeat: no-repeat;
+}
+.first-column.col-md-7.col-sm-12.col-lg-7 {
+    height: 800px;
+    background-color: grey;
+} */
+button.btn a {
+    text-decoration: none;
+    color: white;
+}
 .form-control {
     display: block;
     width: 100%;

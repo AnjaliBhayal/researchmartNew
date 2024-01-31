@@ -84,50 +84,57 @@
         <div class="ban_img">
           <img src="../assets/img/Group 111 (1).svg" alt="banner" border="0">
           <div class="container">
-            <div class="ban_text">
+            <div class="row">
+              <div class="first-column col-md-7 col-sm-12 col-lg-7">
+                <div class="ban_text">
 
-              <div class="banner-ctn">
-                <h1>
-                  Unlock Your Path to Profit With Our Stock Recommendations
-                </h1>
+                  <div class="banner-ctn">
+                    <h1>
+                      Unlock Your Path to Profit With Our Stock Recommendations
+                    </h1>
+                  </div>
+                  <div class="form-parent">
+                    <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
+                      <div class="form-group">
+                        <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
+                          aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
+                          'is-invalid': submittedb && b.name.errors
+                        }" />
+                        <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
+                          <div *ngIf="b.name.errors.required"> Full Name is required</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
+                          aria-describedby="emailHelp" placeholder="Enter Your pNumber" [ngClass]="{
+                          'is-invalid': submittedb && b.pNumber.errors
+                        }" />
+                        <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
+                          <div *ngIf="b.pNumber.errors.required"> Phone Number is required</div>
+                          <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
+                            Mobile Number requied only 10 characters.
+                          </div>
+                          <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
+                            Mobile Number requied only 10 characters.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
+                          aria-describedby="emailHelp" placeholder="Enter Your city" [ngClass]="{
+                          'is-invalid': submittedb && b.citys.errors
+                        }">
+                        <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
+                          <div *ngIf="b.citys.errors.required"> City is required</div>
+                        </div>
+                      </div>
+                      <button type="submit" class="form1">Submit</button>
+                    </form>
+                  </div>
+                </div>
               </div>
-              <div class="form-parent">
-                <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
-                  <div class="form-group">
-                    <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
-                      aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
-                      'is-invalid': submittedb && b.name.errors
-                    }" />
-                    <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
-                      <div *ngIf="b.name.errors.required"> Full Name is required</div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
-                      aria-describedby="emailHelp" placeholder="Enter Your pNumber" [ngClass]="{
-                      'is-invalid': submittedb && b.pNumber.errors
-                    }" />
-                    <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
-                      <div *ngIf="b.pNumber.errors.required"> Phone Number is required</div>
-                      <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
-                        Mobile Number requied only 10 characters.
-                      </div>
-                      <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
-                        Mobile Number requied only 10 characters.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
-                      aria-describedby="emailHelp" placeholder="Enter Your city" [ngClass]="{
-                      'is-invalid': submittedb && b.citys.errors
-                    }">
-                    <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
-                      <div *ngIf="b.citys.errors.required"> City is required</div>
-                    </div>
-                  </div>
-                  <button type="submit" class="form1">Submit</button>
-                </form>
+              <div class="first-column1 col-md-5">
+
               </div>
             </div>
           </div>
@@ -1081,3 +1088,4 @@
 </body>
 
 </html>
+
