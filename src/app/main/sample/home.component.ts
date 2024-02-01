@@ -74,7 +74,7 @@ export class HomeComponent implements OnInit {
    */
   ngOnInit() {
     this.addSmoothScroll();
-    this.checkScreenSize();
+    // this.checkScreenSize();
     this.swiperBGFuction();
     this.swiperCardFunction();
     
@@ -129,13 +129,13 @@ export class HomeComponent implements OnInit {
       }
     }
   }
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.checkScreenSize();
-  }
-  checkScreenSize() {
-    this.isLargeScreen = window.innerWidth > 1100; // Adjust the breakpoint as needed
-  }
+  // @HostListener('window:resize', ['$event'])
+  // onResize(event: any) {
+  //   this.checkScreenSize();
+  // }
+  // checkScreenSize() {
+  //   this.isLargeScreen = window.innerWidth > 1100; // Adjust the breakpoint as needed
+  // }
   get f() {
     return this.contactForm.controls;
   }
@@ -201,6 +201,7 @@ export class HomeComponent implements OnInit {
             
             this.toastr.success(data.message,"Success!");
             this.contactForm.reset()
+            this.submitted=false;
            
           }else{
             this.toastr.error(data.message,"error!")
