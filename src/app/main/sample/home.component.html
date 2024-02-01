@@ -43,10 +43,11 @@
         </div>
       </div>
     </nav> -->
-    
+
     <nav class="navbar color navbar-expand-sm bg-light navbar-light">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -72,7 +73,7 @@
           <form class="d-flex">
             <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
             <button class="get-btn1" type="button"><a href="#form">Contact Us</a></button>
-          </form> 
+          </form>
         </div>
       </div>
     </nav>
@@ -170,72 +171,74 @@
         </div>
       </section>
     </div> -->
-<div class="mybanner">
-  
-  <div class="container-fluid">
-    <div class="row p-0">
-      <div class=" fake-parent col-sm-12 col-md-7 col-lg-7 p-0">
-        <div class="fakeimg child"> <div class="ban_text">
-          <div class="banner-ctn">
-            <p>
-              Unlock Your Path to Profit With Our Stock Recommendations
-            </p>
-          </div>
-          <div class="row">
-            <div class="col-md-12  col-lg-10 col-sm-12">
-              <div class="form-parent">
-                <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
-                  <div class="form-group">
-                    <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
-                      aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
+    <div class="mybanner">
+
+      <div class="container-fluid">
+        <div class="row p-0">
+          <div class=" fake-parent col-sm-12 col-md-7 col-lg-7 p-0">
+            <div class="fakeimg child">
+              <div class="ban_text">
+                <div class="banner-ctn">
+                  <p>
+                    Unlock Your Path to Profit With Our Stock Recommendations
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-md-12  col-lg-10 col-sm-12">
+                    <div class="form-parent">
+                      <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
+                        <div class="form-group">
+                          <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
+                            aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
                       'is-invalid': submittedb && b.name.errors
                     }" />
-                    <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
-                      <div *ngIf="b.name.errors.required"> Full Name is required</div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
-                      aria-describedby="emailHelp" placeholder="Enter Your Number" [ngClass]="{
+                          <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
+                            <div *ngIf="b.name.errors.required"> Full Name is required</div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
+                            aria-describedby="emailHelp" placeholder="Enter Your Number" [ngClass]="{
                       'is-invalid': submittedb && b.pNumber.errors
                     }" />
-                    <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
-                      <div *ngIf="b.pNumber.errors.required"> Phone Number is required</div>
-                      <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
-                        Mobile Number requied only 10 characters.
-                      </div>
-                      <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
-                        Mobile Number requied only 10 characters.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
-                      aria-describedby="emailHelp" placeholder="Enter Your C  ity" [ngClass]="{
+                          <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
+                            <div *ngIf="b.pNumber.errors.required"> Phone Number is required</div>
+                            <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
+                              Mobile Number requied only 10 characters.
+                            </div>
+                            <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
+                              Mobile Number requied only 10 characters.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
+                            aria-describedby="emailHelp" placeholder="Enter Your City" [ngClass]="{
                       'is-invalid': submittedb && b.citys.errors
                     }">
-                    <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
-                      <div *ngIf="b.citys.errors.required"> City is required</div>
+                          <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
+                            <div *ngIf="b.citys.errors.required"> City is required</div>
+                          </div>
+                        </div>
+                        <button type="submit" class="form1">Submit</button>
+                      </form>
                     </div>
                   </div>
-                  <button type="submit" class="form1">Submit</button>
-                </form>
+                </div>
+
               </div>
             </div>
-            </div>
-          
-        </div></div>
-        <hr class="d-sm-none">  
-      </div>
-      <div class="col-sm-12 col-md-5 col-lg-5 p-0 pl-0 pr-0">
-       
-        <div class="fakeimg"><img class="img-fluid" src="../../../assets/images/myimages/banner.svg"></div>
-   
-     
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-12 col-md-5 col-lg-5 p-0 pl-0 pr-0">
+
+            <div class="fakeimg"><img class="img-fluid" src="../../../assets/images/myimages/banner.svg"></div>
+
+
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <!-- banner section -->
 
 
@@ -259,16 +262,16 @@
                   At Research Mart, Our Mission Is To Provide Top-Class Stock Recommendations ,
                   Through Top-Class Thorough Research.
                 </p>
-  
+
                 <button class="btn"><a href="#form">Contact Us</a></button>
-  
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-   
+
     <!-- <div id="about">
       <section id="about">
         <div class="about-parent">
@@ -349,8 +352,8 @@
                   <div class="seb-image col-md-12 d-flex justify-content-center">
                     <img class="img-fluid" src="../../../assets/img/rectangle-16.png" alt="">
                   </div>
-                </div>  
-                  <!-- <div class="box1">
+                </div>
+                <!-- <div class="box1">
                     <div class="box">
                     </div>
                   </div> -->
@@ -390,82 +393,83 @@
                           <div class="card ">
                             <div class="my-card">
                               <h1 class="stock-heading">Stocks Unnati</h1>
-                            <div class="card-body">
-                              <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo con</p>
-                              <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                              <div class="card-body">
+                                <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
+                                  laboris nisi ut aliquip ex ea commodo con</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
-                              <div class="price-detail">
-                                <ul>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                </ul>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 12,000)</span></li>
+                                    <li>1 Quarterly <span> (Rs. 12,000)</span></li>
+                                    <li>1 Month <span> (Rs. 12,000)</span></li>
+                                    <li>1 Month <span> (Rs. 12,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
                               </div>
-                              <div class="bank-btn">
-                                <a href="">Bank Detail</a>
-                              </div>
-                              <div class="bank-read">
-                                <a href="">Read More.</a>
-                              </div>
-                            </div>
                             </div>
                           </div>
                           <div class="card  d-none d-md-block">
                             <div class="my-card">
-                              <h1 class="stock-heading">Stocks Unnati</h1>
-                            <div class="card-body">
-                              <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo con</p>
-                              <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                              <h1 class="stock-heading">Kuber Dhan Equity</h1>
+                              <div class="card-body">
+                                <p class="card-text">This is customized service for High Net worth Investors, in which
+                                  clients get combinations of all signals by one expert.</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
-                              <div class="price-detail">
-                                <ul>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                </ul>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 21,000)</span></li>
+                                    <li>1 Quarterly <span> (Rs. 60,000)</span></li>
+                                    <li>1 Half yearly <span> (Rs. 1,00,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
                               </div>
-                              <div class="bank-btn">
-                                <a href="">Bank Detail</a>
-                              </div>
-                              <div class="bank-read">
-                                <a href="">Read More.</a>
-                              </div>
-                            </div>
                             </div>
                           </div>
                           <div class="card  d-none d-md-block ">
                             <div class="my-card">
-                              <h1 class="stock-heading">Stocks Unnati</h1>
-                            <div class="card-body">
-                              <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo con</p>
-                              <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                              <h1 class="stock-heading">Dhatu Urja Nivesh</h1>
+                              <div class="card-body">
+                                <p class="card-text">In Dhatu Urja Nivesh Product we provide Aluminum, Copper, lead,
+                                  Zinc, Nickel, Crude Oil & Natural Gas recommendation with target & stop loss. We
+                                  provide you Recommendations on the in-depth analysis using technical & fundamental
+                                  analysis by using SMS system.</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
-                              <div class="price-detail">
-                                <ul>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                </ul>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 14,000)</span></li>
+                                    <li>1 Quarterly <span> (Rs. 38,000)</span></li>
+                                    <li>1 half yearly <span> (Rs. 68,000)</span></li>
+                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
                               </div>
-                              <div class="bank-btn">
-                                <a href="">Bank Detail</a>
-                              </div>
-                              <div class="bank-read">
-                                <a href="">Read More.</a>
-                              </div>
-                            </div>
                             </div>
                           </div>
 
@@ -475,169 +479,261 @@
                         <div class="cards-wrapper">
                           <div class="card">
                             <div class="my-card">
-                              <h1 class="stock-heading">Stocks Unnati</h1>
-                            <div class="card-body">
-                              <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo con</p>
-                              <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                              <h1 class="stock-heading">Future Pragati</h1>
+                              <div class="card-body">
+                                <p class="card-text"> In Future Pragati Product, we will provide recommendations in
+                                  Stock Futures, recommendations will be given purely on an intraday basis.</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
-                              <div class="price-detail">
-                                <ul>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                </ul>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 15,000)</span></li>
+                                    <li>1 Quarterly <span> (Rs. 35,000)</span></li>
+                                    <li>1 half yearly <span> (Rs. 65,000)</span></li>
+                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
                               </div>
-                              <div class="bank-btn">
-                                <a href="">Bank Detail</a>
-                              </div>
-                              <div class="bank-read">
-                                <a href="">Read More.</a>
-                              </div>
-                            </div>
                             </div>
                           </div>
                           <div class="card d-none d-md-block">
                             <div class="my-card">
-                              <h1 class="stock-heading">Stocks Unnati</h1>
-                            <div class="card-body">
-                              <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo con</p>
-                              <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                              <h1 class="stock-heading">Suchkank </h1>
+                              <div class="card-body">
+                                <p class="card-text"> Product requires minimum Investment. In this product we will
+                                  provide you Nifty & Bank Nifty options recommendations on the basis of technical
+                                  analysis.</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
-                              <div class="price-detail">
-                                <ul>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                </ul>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 11,000)</span></li>
+                                    <li>1 Quarterly <span> (Rs. 30,000)</span></li>
+                                    <li>1 half yearly <span> (Rs. 55,000)</span></li>
+                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
                               </div>
-                              <div class="bank-btn">
-                                <a href="">Bank Detail</a>
-                              </div>
-                              <div class="bank-read">
-                                <a href="">Read More.</a>
-                              </div>
-                            </div>
                             </div>
                           </div>
                           <div class="card d-none d-md-block ">
                             <div class="my-card">
-                              <h1 class="stock-heading">Stocks Unnati</h1>
-                            <div class="card-body">
-                              <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo con</p>
-                              <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                              <h1 class="stock-heading">Nifty Raai</h1>
+                              <div class="card-body">
+                                <p class="card-text">Nifty is a commonly traded as derivative in stock market. This is
+                                  our premium package which is especially designed to all traders and investors who
+                                  wants to trade in Nifty Futures and Bank Nifty Futures intraday trading.</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
-                              <div class="price-detail">
-                                <ul>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                </ul>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 15,000)</span></li>
+                                    <li>1 Quarterly <span> (Rs. 35,000)</span></li>
+                                    <li>1 half yearly <span> (Rs. 65,000)</span></li>
+                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
                               </div>
-                              <div class="bank-btn">
-                                <a href="">Bank Detail</a>
-                              </div>
-                              <div class="bank-read">
-                                <a href="">Read More.</a>
-                              </div>
-                            </div>
                             </div>
                           </div>
-                          
+
                         </div>
                       </div>
                       <div class="carousel-item">
                         <div class="cards-wrapper">
                           <div class="card">
                             <div class="my-card">
-                              <h1 class="stock-heading">Stocks Unnati</h1>
-                            <div class="card-body">
-                              <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo con</p>
-                              <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                              <h1 class="stock-heading">Option Labh</h1>
+                              <div class="card-body">
+                                <p class="card-text"> This package is designed for traders who do not have time to track
+                                  the market on daily basis and also do not want to get involved in intraday trading.
+                                </p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
-                              <div class="price-detail">
-                                <ul>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                </ul>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 12,000)</span></li>
+                                    <li>1 Quarterly <span> (Rs.32,000)</span></li>
+                                    <li>1 half yearly <span> (Rs. 60,000)</span></li>
+                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
                               </div>
-                              <div class="bank-btn">
-                                <a href="">Bank Detail</a>
-                              </div>
-                              <div class="bank-read">
-                                <a href="">Read More.</a>
-                              </div>
-                            </div>
                             </div>
                           </div>
                           <div class="card d-none d-md-block">
                             <div class="my-card">
-                              <h1 class="stock-heading">Stocks Unnati</h1>
-                            <div class="card-body">
-                              <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo con</p>
-                              <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                              <h1 class="stock-heading">Equity Research Report</h1>
+                              <div class="card-body">
+                                <p class="card-text"> Equity Research Report will be made by Research Analyst on Equity
+                                  market. It also contains all the important and useful data of global market and Indian
+                                  stock market.</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
-                              <div class="price-detail">
-                                <ul>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                </ul>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 2,999)</span></li>
+                                    <li>1 Quarterly <span> (Rs.6,999)</span></li>
+                                    <li>1 half yearly <span> (Rs. 11,999)</span></li>
+                                    <li>1 yearly <span> (Rs. 19,999)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
                               </div>
-                              <div class="bank-btn">
-                                <a href="">Bank Detail</a>
-                              </div>
-                              <div class="bank-read">
-                                <a href="">Read More.</a>
-                              </div>
-                            </div>
                             </div>
                           </div>
                           <div class="card d-none d-md-block">
                             <div class="my-card">
-                              <h1 class="stock-heading">Stocks Unnati</h1>
-                            <div class="card-body">
-                              <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo con</p>
-                              <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                              <h1 class="stock-heading">Option Premium Sanket</h1>
+                              <div class="card-body">
+                                <p class="card-text">In Option Premium Sanket we provide Stocks & Index
+                                  intraday/overnight recommendation for traders with proper Target & Stop loss in
+                                  Derivative Market. We provide you call onthe in-depth analysis using technical
+                                  analysis by using SMS system. Recommendations will be provided in Liquid script, with
+                                  good open interest.</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
-                              <div class="price-detail">
-                                <ul>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                  <li>1 Month <span> (Rs. 12,000)</span></li>
-                                </ul>
-                              </div>
-                              <div class="bank-btn">
-                                <a href="">Bank Detail</a>
-                              </div>
-                              <div class="bank-read">
-                                <a href="">Read More.</a>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 50,000)</span></li>
+                                    <li>1 Quarterly <span> (Rs. 1,50,000)</span></li>
+                                    <li>1 half yearly <span> (Rs. 3,00,000)</span></li>
+                                    <li>1 yearly <span> (Rs. 6,00,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
                               </div>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="cards-wrapper">
+                          <div class="card">
+                            <div class="my-card">
+                              <h1 class="stock-heading">Svarn Nivesh</h1>
+                              <div class="card-body">
+                                <p class="card-text">In Svarn Nivesh Product we provide Gold & Silver recommendation
+                                  with target & stop loss. We provide you Recommendations on the in-depth analysis using
+                                  technical & fundamental analysis by using SMS system.</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                                <div class="gst">
+                                  <h5>Pricing ( Excluding GST)</h5>
+                                </div>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Quarterly <span> (Rs. 24,000)</span></li>
+                                    <li>1 Half Yearly <span> (Rs. 66,000)</span></li>
+                                    <li>1 Yearly <span> (Rs. 1,00,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card d-none d-md-block">
+                            <div class="my-card">
+                              <h1 class="stock-heading">Options Chayan</h1>
+                              <div class="card-body">
+                                <p class="card-text">In Option Chayan we provide Stocks & Index intraday/holding
+                                  recommendation for traders with proper Target & Stop loss in Derivative Market.</p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                                <div class="gst">
+                                  <h5>Pricing ( Excluding GST)</h5>
+                                </div>
+                                <div class="price-detail">
+                                  <ul>
+                                    <li>1 Month <span> (Rs. 35,000)</span></li>
+                                    <li>1 Quarterly <span> (Rs. 60,000)</span></li>
+                                    <li>1 Half Yearly <span> (Rs. 1,05,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
+                              </div>
+                            </div>
+                         
+                          </div>
+                          <div class="card d-none d-md-block">
+                            <div class="my-card">
+                              <h1 class="stock-heading">Positional Vriddhi</h1>
+                              <div class="card-body">
+                                <p class="card-text">This package is designed for traders who do not have time to track
+                                  the market on daily basis and also do not want to get involved in intraday trading.
+                                </p>
+                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
+                                <div class="gst">
+                                  <h5>Pricing ( Excluding GST)</h5>
+                                </div>
+                                <div class="price-detail">
+                                  <ul>                           
+                                    <li>1 Quarterly <span> (Rs. 30,000)</span></li>
+                                    <li>1 half yearly <span> (Rs. 55,000)</span></li>
+                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                  </ul>
+                                </div>
+                                <div class="bank-btn">
+                                  <a href="">Bank Detail</a>
+                                </div>
+                                <div class="bank-read">
+                                  <a href="">Read More.</a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -681,7 +777,7 @@
               <div class="pricing-ctn">
                 <div class="serviceline d-flex justify-content-center">
                   <img class="line" src="../assets/img/line-1-1.svg" />
-                  <h1 style="color: black;"> <span>faq</span></h1>
+                  <h1 style="color: black;"> <span>FAQ</span></h1>
                   <img class="line" src="../assets/img/line-1-1.svg" />
                 </div>
                 <h1 class="pricing-heading">
@@ -805,28 +901,37 @@
                     <div class="carousel-item active">
                       <div class="cards-wrapper">
                         <div class="card ">
-                          <img src="../../../assets/images/testimanial image/Amit.png" class="card-img-top d-block w-100" alt="...">
+                          <img src="../../../assets/images/testimanial image/Amit.png"
+                            class="card-img-top d-block w-100" alt="...">
                           <div class="card-body">
 
-                            <p class="card-text">Research Mart is the real deal, yaar! Their investment plans are simple and effective. I'm seeing great returns, and they've got my back when it comes to managing my money smartly.</p>
+                            <p class="card-text">Research Mart is the real deal, yaar! Their investment plans are simple
+                              and effective. I'm seeing great returns, and they've got my back when it comes to managing
+                              my money smartly.</p>
                             <h5 class="card-title">Amit Sharma</h5>
 
                           </div>
                         </div>
                         <div class="card  d-none d-md-block">
-                          <img src="../../../assets/images/testimanial image/Arjun.png" class="card-img-top d-block w-100" alt="...">
+                          <img src="../../../assets/images/testimanial image/Arjun.png"
+                            class="card-img-top d-block w-100" alt="...">
                           <div class="card-body">
 
-                            <p class="card-text">I was a bit skeptical with the reviews, but Research Mart proved them wrong. My investments are growing, and their vibe is all about mutual growth. Totally happy with the financial ride!</p>
+                            <p class="card-text">I was a bit skeptical with the reviews, but Research Mart proved them
+                              wrong. My investments are growing, and their vibe is all about mutual growth. Totally
+                              happy with the financial ride!</p>
                             <h5 class="card-title">Arjun Tiwari</h5>
 
                           </div>
                         </div>
                         <div class="card  d-none d-md-block ">
-                          <img src="../../../assets/images/testimanial image/Karan.png" class="card-img-top d-block w-100" alt="...">
+                          <img src="../../../assets/images/testimanial image/Karan.png"
+                            class="card-img-top d-block w-100" alt="...">
                           <div class="card-body">
 
-                            <p class="card-text">Research Mart is like that friend who always gives you the best advice. Their investment plans are so easy to understand, and the returns are like a pleasant surprise every time</p>
+                            <p class="card-text">Research Mart is like that friend who always gives you the best advice.
+                              Their investment plans are so easy to understand, and the returns are like a pleasant
+                              surprise every time</p>
                             <h5 class="card-title">Karan Singh</h5>
 
                           </div>
@@ -839,7 +944,9 @@
                           <img src="../../../assets/images/testimanial image/Rahul.png" class="card-img-top" alt="...">
                           <div class="card-body">
 
-                            <p class="card-text">Choosing Research Mart was like hitting the jackpot! They manage my money responsibly, and I feel like my financial future is in good hands. Kudos to the team!</p>
+                            <p class="card-text">Choosing Research Mart was like hitting the jackpot! They manage my
+                              money responsibly, and I feel like my financial future is in good hands. Kudos to the
+                              team!</p>
                             <h5 class="card-title">Rahul Pawar</h5>
 
                           </div>
@@ -848,7 +955,9 @@
                           <img src="../../../assets/images/testimanial image/Rajat.png" class="card-img-top" alt="...">
                           <div class="card-body">
 
-                            <p class="card-text">Research Mart, you beauty! I don't usually write testimonials, but these guys deserve it. Despite the caution, I jumped in, and my investments are rocking. Trust the process, folks!</p>
+                            <p class="card-text">Research Mart, you beauty! I don't usually write testimonials, but
+                              these guys deserve it. Despite the caution, I jumped in, and my investments are rocking.
+                              Trust the process, folks!</p>
                             <h5 class="card-title">Rajat Shinde</h5>
 
                           </div>
@@ -857,7 +966,9 @@
                           <img src="../../../assets/images/testimanial image/Tanvi.png" class="card-img-top" alt="...">
                           <div class="card-body">
 
-                            <p class="card-text">Research Mart has this cool factor in handling money. The reviews may say what they want, but my returns are speaking louder. It's like they know how to make my money hustle.</p>
+                            <p class="card-text">Research Mart has this cool factor in handling money. The reviews may
+                              say what they want, but my returns are speaking louder. It's like they know how to make my
+                              money hustle.</p>
                             <h5 class="card-title">Tanvi Pal</h5>
 
                           </div>
@@ -870,7 +981,9 @@
                           <img src="../../../assets/images/testimanial image/Vikram.png" class="card-img-top" alt="...">
                           <div class="card-body">
 
-                            <p class="card-text">Research Mart is like the rockstar of investment services. Caution? Nah, I took the leap, and now I'm enjoying the financial groove. These guys make money management feel like a party!</p>
+                            <p class="card-text">Research Mart is like the rockstar of investment services. Caution?
+                              Nah, I took the leap, and now I'm enjoying the financial groove. These guys make money
+                              management feel like a party!</p>
                             <h5 class="card-title">Vikram Singh</h5>
 
                           </div>
@@ -879,7 +992,9 @@
                           <img src="../../../assets/images/testimanial image/Rohan.png" class="card-img-top" alt="...">
                           <div class="card-body">
 
-                            <p class="card-text">Research Mart is not just about the money; it's about the vibe. I feel a sense of trust, and my returns are giving me that extra cha-ching! Loving the financial journey with these folks.</p>
+                            <p class="card-text">Research Mart is not just about the money; it's about the vibe. I feel
+                              a sense of trust, and my returns are giving me that extra cha-ching! Loving the financial
+                              journey with these folks.</p>
                             <h5 class="card-title">Rohan Roy</h5>
 
                           </div>
@@ -888,7 +1003,9 @@
                           <img src="../../../assets/images/testimanial image/Ravi.png" class="card-img-top" alt="...">
                           <div class="card-body">
 
-                            <p class="card-text">Research Mart, you're my financial superhero! Despite the reviews, I took the leap, and my investments are soaring. It's like they have a cape of financial wisdom. Cheers to that!</p>
+                            <p class="card-text">Research Mart, you're my financial superhero! Despite the reviews, I
+                              took the leap, and my investments are soaring. It's like they have a cape of financial
+                              wisdom. Cheers to that!</p>
                             <h5 class="card-title">Ravi Mehta</h5>
 
                           </div>
@@ -983,8 +1100,8 @@
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlTextarea1">Message</label>
-                          <textarea class="form-control" formControlName="message" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Select Message" [ngClass]="{
+                          <textarea class="form-control" formControlName="message" id="exampleFormControlTextarea1"
+                            rows="3" placeholder="Select Message" [ngClass]="{
                               'is-invalid': submitted && f.message.errors
                             }"> </textarea>
                           <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
@@ -994,9 +1111,9 @@
                         <button type="submit" class="form btn-primary">Submit</button>
                       </form>
                     </div>
-                    </div>
-                    </div>
-               
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -1203,4 +1320,3 @@
 </body>
 
 </html>
-
