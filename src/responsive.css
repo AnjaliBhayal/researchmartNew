@@ -2,7 +2,24 @@
 /*===============================================
             Smart phone and tablets
 ===============================================*/
-
+@media(max-width:320px) {
+    .ban_text {
+        padding: 20px;
+    }
+    .banner-ctn {
+        font-size: 40px;
+    }
+    .mybanner {
+        overflow: hidden;
+        padding-bottom: 26px;
+    }
+    div#navbarTogglerDemo01 {
+        padding-top: 24px;
+    }
+    .about-ctn p {
+        font-size: 24px;
+    }
+}
 @media(max-width:767px) {
 
     /*-- about --*/
@@ -39,11 +56,11 @@
 
 
 
-    .banner-ctn h1 {
+    /* .banner-ctn h1 {
         font-size: 18px;
         max-width: 299px;
         line-height: 28px;
-    }
+    } */
 
     .footer-menu {
         display: block;
@@ -84,10 +101,10 @@
         text-align: center;
     }
 
-    .about-column img {
+    /* .about-column img {
         height: 100%;
         max-width: 399px;
-    }
+    } */
 
     .red-rectangle {
         background: linear-gradient(180deg,
@@ -128,18 +145,33 @@
     .modal-content {
         width: 92%;
     }
-  
+    .ban_text {
+        padding: 20px;
+    }
+    .banner-ctn {
+        font-size: 40px;
+    }
+    .mybanner {
+        overflow: hidden;
+        padding-bottom: 26px;
+    }
+    div#navbarTogglerDemo01 {
+        padding-top: 24px;
+    }
+    .about-ctn p {
+        font-size: 36px;
+    }
 }
 
 @media(max-width:500px) {
     .modal-content {
         width: 92%;
     }
-    .banner-ctn h1 {
+    /* .banner-ctn h1 {
         font-size: 18px;
         max-width: 299px;
         line-height: 28px;
-    }
+    } */
 
     .footer-menu {
         display: block;
@@ -208,6 +240,9 @@
         justify-content: center;
         padding-top: 19px;
     }
+    .banner-ctn {
+        font-size: 40px;
+    }
 
     .rectangele-parent {
         padding-top: 42px;
@@ -238,11 +273,17 @@
         border-radius: var(--bs-border-radius);
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     } */
-    button.form1 {
-        padding: 13px 10px;
-        width: 76%;
-    }
   
+    .ban_text {
+        padding: 20px;
+    }
+    .mybanner {
+        overflow: hidden;
+        padding-bottom: 26px;
+    }
+    div#navbarTogglerDemo01 {
+        padding-top: 24px;
+    }
 }
 
 
@@ -278,19 +319,25 @@
     .about-clm {
         width: 100%;
     }
+    .banner-ctn {
+        font-size: 40px;
+    }
 
     
 
     .about-ctn {
         padding-top: 25px;
     }
+    .ban_text {
+        padding: 20px;
+    }
 
-    .banner-ctn h1 {
+    /* .banner-ctn h1 {
         font-size: 25px;
         max-width: 376px;
         line-height: 40px;
         padding-top: 23px;
-    }
+    } */
 
     .footer-menu {
         display: block;
@@ -362,11 +409,13 @@
         width: 100%;
         max-width: 120px;
     }
-    button.form1 {
-        padding: 13px 10px;
-        width: 76%;
+    .mybanner {
+        overflow: hidden;
+        padding-bottom: 26px;
     }
-  
+    div#navbarTogglerDemo01 {
+        padding-top: 24px;
+    }
 }
 
 
@@ -375,15 +424,18 @@
 ===============================================*/
 
 @media(min-width:992px) and (max-width:1199px) {    
-    .header-parent {
+    /* .header-parent {
         display: none;
-    }
+    } */
 
     .banner-ctn h1 {
         font-size: 54px;
         max-width: 540px;
     }
 
+    .banner-ctn {
+        font-size: 40px;
+    }
     .footer2-column {
         padding-top: 31px;
     }
@@ -432,9 +484,16 @@
         width: 100%;
         max-width: 72px;
     }
-    button.form1 {
+    /* button.form1 {
         padding: 13px 10px;
         width: 76%;
+    } */
+    .ban_text {
+        padding: 20px;
+    }
+    .mybanner {
+        overflow: hidden;
+        padding-bottom: 26px;
     }
   
 }
@@ -526,15 +585,21 @@
     .container, .container-sm {
         max-width: 1170px;
     }
-    .banner-ctn h1 {
+    /* .banner-ctn h1 {
         font-size: 15px;
         max-width: 299px;
         line-height: 28px;
         padding-top: 50px;
-    }
-    button.form1 {
-        padding: 13px 10px;
-        width: 76%;
+    } */
+    .ban_text {
+        padding: 20px;
     }
   
+    .banner-ctn {
+        font-size: 35px;
+    }
+    .mybanner {
+        overflow: hidden;
+        padding-bottom: 26px;
+    }
 }

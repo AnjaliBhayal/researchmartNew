@@ -13,7 +13,7 @@
 
   <body>
     <!-- header -->
-    <nav class="header-section" *ngIf="isLargeScreen">
+    <!-- <nav class="header-section">
       <div class="container">
         <div class="header-parent">
           <div class="header-logo col-sm-3 col-md-2 col-lg-2">
@@ -35,9 +35,6 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#services">Services</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#form">Contact us</a>
-              </li> -->
             </ul>
           </div>
           <div class="get-btn col-sm-3 col-md-3 col-lg-3">
@@ -45,11 +42,44 @@
           </div>
         </div>
       </div>
+    </nav> -->
+    
+    <nav class="navbar color navbar-expand-sm bg-light navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div class="header-logo col-sm-3 col-md-2 col-lg-2">
+            <a (click)="openModel(content)"><img src="../assets/img/background-1.svg" alt="" /></a>
+          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#services">Services</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <button class="get-btn1" type="button"><a href="#form">Contact Us</a></button>
+          </form> 
+        </div>
+      </div>
     </nav>
     <!-- header -->
 
     <!-- second header -->
-    <header class="offcanvas-menu" *ngIf="!isLargeScreen">
+    <!-- <header class="offcanvas-menu">
       <div class="container">
         <div class="logo-icon">
           <div class="logo">
@@ -74,12 +104,12 @@
           <li><a href="">Contact us </a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
     <!-- second header -->
 
 
     <!-- banner section-->
-    <div id="home">
+    <!-- <div id="home">
       <section class="ban_sec">
         <div class="ban_img">
           <img  src="../assets/img/Group 111 (1).svg" alt="banner" border="0">
@@ -87,7 +117,6 @@
             <div class="row">
               <div class="first-column col-md-7 col-sm-12 col-lg-7">
                 <div class="ban_text">
-
                   <div class="banner-ctn">
                     <h1>
                       Unlock Your Path to Profit With Our Stock Recommendations
@@ -140,12 +169,107 @@
           </div>
         </div>
       </section>
+    </div> -->
+<div class="mybanner">
+  
+  <div class="container-fluid">
+    <div class="row p-0">
+      <div class=" fake-parent col-sm-12 col-md-7 col-lg-7 p-0">
+        <div class="fakeimg child"> <div class="ban_text">
+          <div class="banner-ctn">
+            <p>
+              Unlock Your Path to Profit With Our Stock Recommendations
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-12  col-lg-10 col-sm-12">
+              <div class="form-parent">
+                <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
+                  <div class="form-group">
+                    <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
+                      aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
+                      'is-invalid': submittedb && b.name.errors
+                    }" />
+                    <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
+                      <div *ngIf="b.name.errors.required"> Full Name is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
+                      aria-describedby="emailHelp" placeholder="Enter Your Number" [ngClass]="{
+                      'is-invalid': submittedb && b.pNumber.errors
+                    }" />
+                    <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
+                      <div *ngIf="b.pNumber.errors.required"> Phone Number is required</div>
+                      <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
+                        Mobile Number requied only 10 characters.
+                      </div>
+                      <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
+                        Mobile Number requied only 10 characters.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
+                      aria-describedby="emailHelp" placeholder="Enter Your C  ity" [ngClass]="{
+                      'is-invalid': submittedb && b.citys.errors
+                    }">
+                    <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
+                      <div *ngIf="b.citys.errors.required"> City is required</div>
+                    </div>
+                  </div>
+                  <button type="submit" class="form1">Submit</button>
+                </form>
+              </div>
+            </div>
+            </div>
+          
+        </div></div>
+        <hr class="d-sm-none">  
+      </div>
+      <div class="col-sm-12 col-md-5 col-lg-5 p-0 pl-0 pr-0">
+       
+        <div class="fakeimg"><img class="img-fluid" src="../../../assets/images/myimages/banner.svg"></div>
+   
+     
+      </div>
     </div>
+  </div>
+</div>
     <!-- banner section -->
 
 
     <!-- about section -->
     <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6 col-sm-12">
+            <div class="">
+              <a href=""><img class="img-fluid" src="../assets/img/subtract-3.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 col-sm-12">
+            <div class="">
+              <div class="about-ctn">
+                <div class="line d-flex">
+                  <img class="line" src="../assets/img/line-1-1.svg" />
+                  <h1>About <span>Us</span></h1>
+                </div>
+                <p>
+                  At Research Mart, Our Mission Is To Provide Top-Class Stock Recommendations ,
+                  Through Top-Class Thorough Research.
+                </p>
+  
+                <button class="btn"><a href="#form">Contact Us</a></button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- <div id="about">
       <section id="about">
         <div class="about-parent">
           <div class="container">
@@ -172,7 +296,7 @@
           </div>
         </div>
       </section>
-    </div>
+    </div> -->
     <!-- about section -->
 
     <!-- services section -->
@@ -831,7 +955,7 @@
                 <h1 class="pricing-heading text-center">
                   Contact Us
                 </h1>
-                <div class="row">
+                <div class="row d-flex justify-content-center ">
                   <div class="col-md-10  col-lg-6 col-sm-12">
                     <div class="form-parent">
                       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">

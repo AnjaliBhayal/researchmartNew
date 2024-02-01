@@ -15,11 +15,15 @@
     color: rgb(0, 0, 0);
 }
 
-.about-column img {
+/* .about-column img {
     height: 100%;
     max-width: 500px;
+} */
+.banner-ctn {
+    max-width: 600px;
+    color: white;
+    font-size: 60px;
 }
-
 .about-ctn p {
     font-size: 13px;
     color: rgb(0, 0, 0);
@@ -122,7 +126,6 @@ button.btn {
 button.btn:hover {
     color: white;
 }
-
 .about-ctn p {
     color: #000;
     font-family: "DM Serif Display";
@@ -130,9 +133,9 @@ button.btn:hover {
     font-style: normal;
     font-weight: 600;
     max-width: 640px;
+    padding-bottom: 25px;
     line-height: 120%;
     text-transform: capitalize;
-
 }
 
 .line h1 {
@@ -150,10 +153,10 @@ button.btn:hover {
 .line.d-flex {
     margin-bottom: 70px;
 }
-
+/* 
 button.btn {
     margin-top: 70px;
-}
+} */
 
 .serviceline h1 {
     font-size: 20px;
@@ -445,10 +448,10 @@ span.text-wrapper-14 {
     color: lightgrey;
 }
 
-.row {
+/* .row {
     display: flex;
     justify-content: center;
-}
+} */
 
 .menu-heading h1 {
     font-size: 20px;
@@ -587,17 +590,17 @@ a.nav-link.active:hover {
     color: #a40000;
 }
 
-.header-section {
+/* .header-section {
     position: absolute;
     left: 0;
     right: 0;
     padding: 25px 0;
     z-index: 999;
-}
-
+} */
+/* 
 section.banner {
     position: relative;
-}
+} */
 
 .banner-parent {
     color: white;
@@ -607,8 +610,11 @@ section.banner {
 
 .banner-ctn {
     max-width: 600px;
+    color: white;
 }
-
+.mybanner{
+    overflow: hidden;
+}
 .banner-ctn h1 {
     font-size: 60px;
 }
@@ -1179,4 +1185,21 @@ header.offcanvas-menu {
 .price-detail li span {
     color: #c40000;
     font-weight: 500;
+}
+
+.fakeimg {
+    height: 100%;
+    background: #1f1f27;
+}
+.fakeimg.child {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(0,0,0,.9);
+    margin: 0 24px;
+}
+section#services {
+    padding: 70px 0;
 }
