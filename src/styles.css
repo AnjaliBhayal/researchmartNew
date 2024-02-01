@@ -1203,12 +1203,6 @@ header.offcanvas-menu {
 /* section#services {
     padding: 70px 0;
 } */
-.col-lg-6 {
-    flex: 0 0 auto;
-    width: 50%;
-    display: grid;
-    align-items: center;
-}
 .line.d-flex {
     margin-bottom: 43px;
 }
