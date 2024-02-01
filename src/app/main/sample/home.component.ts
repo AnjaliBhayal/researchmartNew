@@ -171,6 +171,7 @@ export class HomeComponent implements OnInit {
           if(data.status){
             this.toastr.success(data.message,"Success!");
             this.bannerForm.reset()
+            this.submittedb = false;
            
           }else{
             this.toastr.error(data.message,"error!")
