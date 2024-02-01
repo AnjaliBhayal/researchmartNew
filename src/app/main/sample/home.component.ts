@@ -171,6 +171,7 @@ export class HomeComponent implements OnInit {
           if(data.status){
             this.toastr.success(data.message,"Success!");
             this.bannerForm.reset()
+            this.submittedb=false;
            
           }else{
             this.toastr.error(data.message,"error!")
@@ -200,6 +201,7 @@ export class HomeComponent implements OnInit {
             
             this.toastr.success(data.message,"Success!");
             this.contactForm.reset()
+            this.submitted=false;
            
           }else{
             this.toastr.error(data.message,"error!")

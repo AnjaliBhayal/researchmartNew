@@ -332,13 +332,17 @@ img.testimonial {
 p.card-text {
     font-size: 13px;
     max-width: 350px;
-    /* padding-top: 25px; */
+    padding-top: 25px;
     color: black;
 }
 /* testimonial */
 .form-group {
     margin: 16px 0;
     width: 100%;
+}
+.col-md-12.col-lg-6.col-sm-12.about-column1 {
+    display: grid;
+    align-items: center;
 }
 
 

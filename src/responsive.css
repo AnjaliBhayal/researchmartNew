@@ -19,6 +19,9 @@
     .about-ctn p {
         font-size: 24px;
     }
+    div#about {
+        padding: 39px 0;
+    }
 }
 @media(max-width:767px) {
 
@@ -161,6 +164,9 @@
     .about-ctn p {
         font-size: 36px;
     }
+    div#about {
+        padding: 39px 0;
+    }
 }
 
 @media(max-width:500px) {
@@ -283,6 +289,9 @@
     }
     div#navbarTogglerDemo01 {
         padding-top: 24px;
+    }
+    div#about {
+        padding: 39px 0;
     }
 }
 
@@ -416,6 +425,9 @@
     div#navbarTogglerDemo01 {
         padding-top: 24px;
     }
+    div#about {
+        padding: 39px 0;
+    }
 }
 
 
@@ -495,7 +507,9 @@
         overflow: hidden;
         padding-bottom: 26px;
     }
-  
+    div#about {
+        padding: 39px 0;
+    }
 }
 
 
@@ -601,5 +615,8 @@
     .mybanner {
         overflow: hidden;
         padding-bottom: 26px;
+    }
+    div#about {
+        padding: 39px 0;
     }
 }
