@@ -1,0 +1,15 @@
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: .25rem;
+    line-height: 30px;
+}
+section#disclose {
+    padding: 100px 0;
+}
+h1.pricing-heading {
+    padding-top: 10px;
+    text-align: center;
+}
