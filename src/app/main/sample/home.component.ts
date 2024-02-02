@@ -9,6 +9,7 @@ import {
 import { AdminServiceService } from 'app/Services/admin-service.service';
 import { ToastrService } from 'ngx-toastr';
 import { Swiper } from 'swiper';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -17,12 +18,12 @@ import { Swiper } from 'swiper';
 })
 export class HomeComponent implements OnInit {
   @ViewChild("content",{static:true}) content:ElementRef | undefined;
-  constructor(private modalService: NgbModal, private toastr:ToastrService,private fb: FormBuilder,private adminService: AdminServiceService) {}
+  constructor(private modalService: NgbModal, private toastr:ToastrService,private fb: FormBuilder,private adminService: AdminServiceService,private router: Router) {}
   public contactForm: FormGroup;
   public bannerForm :FormGroup
   public contentHeader: object
   submitted = false;
-  submittedb=false;
+  submittedb = false;
   isLargeScreen: boolean = true;
   private addSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -53,6 +54,10 @@ export class HomeComponent implements OnInit {
       },
     });
   }
+  
+openNewComponent() {
+  this.router.navigate(['/about']);
+}
   swiperCardFunction() {
     const swiper = new Swiper('.mySwiper', {
       slidesPerView: 3,

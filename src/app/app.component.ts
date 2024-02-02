@@ -17,7 +17,8 @@ import { menu } from 'app/menu/menu';
 import { locale as menuEnglish } from 'app/menu/i18n/en';
 import { locale as menuFrench } from 'app/menu/i18n/fr';
 import { locale as menuGerman } from 'app/menu/i18n/de';
-import { locale as menuPortuguese } from 'app/menu/i18n/pt';
+import { locale as menuPortuguese } from 'app/menu/i18n/pt';  
+
 
 @Component({
   selector: 'app-root',
@@ -57,8 +58,11 @@ export class AppComponent implements OnInit, OnDestroy {
     private _coreLoadingScreenService: CoreLoadingScreenService,
     private _coreMenuService: CoreMenuService,
     private _coreTranslationService: CoreTranslationService,
-    private _translateService: TranslateService
-  ) {
+    private _translateService: TranslateService,
+  
+    
+  )
+   {
     // Get the application main menu
     this.menu = menu;
 
