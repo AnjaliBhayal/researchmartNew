@@ -14,7 +14,7 @@
   <body>
     <!-- header -->
     <nav class="navbar color navbar-expand-sm bg-light navbar-light">
-      <div class="container-fluid">
+      <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,51 +51,53 @@
         <div class="row p-0">
           <div class=" fake-parent col-sm-12 col-md-7 col-lg-7 p-0">
             <div class="fakeimg child">
-              <div class="ban_text">
-                <div class="banner-ctn">
-                  <p>
-                    Unlock Your Path to Profit With Our Stock Recommendations
-                  </p>
-                </div>
-                <div class="row">
-                  <div class="col-md-12  col-lg-10 col-sm-12">
-                    <div class="form-parent">
-                      <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
-                        <div class="form-group">
-                          <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
-                            aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
+              <div class="container">
+                <div class="ban_text">
+                  <div class="banner-ctn">
+                    <p>
+                      Unlock Your Path to Profit With Our Stock Recommendations
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12  col-lg-10 col-sm-12">
+                      <div class="form-parent">
+                        <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
+                          <div class="form-group">
+                            <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
+                              aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
                       'is-invalid': submittedb && b.name.errors
                     }" />
-                          <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
-                            <div *ngIf="b.name.errors.required"> Full Name is required</div>
+                            <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
+                              <div *ngIf="b.name.errors.required"> Full Name is required</div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="form-group">
-                          <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
-                            aria-describedby="emailHelp" placeholder="Enter Your Number" [ngClass]="{
+                          <div class="form-group">
+                            <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
+                              aria-describedby="emailHelp" placeholder="Enter Your Number" [ngClass]="{
                       'is-invalid': submittedb && b.pNumber.errors
                     }" />
-                          <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
-                            <div *ngIf="b.pNumber.errors.required"> Phone Number is required</div>
-                            <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
-                              Mobile Number requied only 10 characters.
-                            </div>
-                            <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
-                              Mobile Number requied only 10 characters.
+                            <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
+                              <div *ngIf="b.pNumber.errors.required"> Phone Number is required</div>
+                              <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
+                                Mobile Number requied only 10 characters.
+                              </div>
+                              <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
+                                Mobile Number requied only 10 characters.
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="form-group">
-                          <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
-                            aria-describedby="emailHelp" placeholder="Enter Your City" [ngClass]="{
+                          <div class="form-group">
+                            <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
+                              aria-describedby="emailHelp" placeholder="Enter Your City" [ngClass]="{
                       'is-invalid': submittedb && b.citys.errors
                     }">
-                          <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
-                            <div *ngIf="b.citys.errors.required"> City is required</div>
+                            <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
+                              <div *ngIf="b.citys.errors.required"> City is required</div>
+                            </div>
                           </div>
-                        </div>
-                        <button type="submit" class="form1">Submit</button>
-                      </form>
+                          <button type="submit" class="form1">Submit</button>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -236,9 +238,9 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 12,000)</span></li>
-                                    <li>1 Quarterly <span> (Rs. 12,000)</span></li>
-                                    <li>1 Month <span> (Rs. 12,000)</span></li>
-                                    <li>1 Month <span> (Rs. 12,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 12,000)</span></li>
+                                    <li>Month <span> (Rs. 12,000)</span></li>
+                                    <li>Month <span> (Rs. 12,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -262,8 +264,8 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 21,000)</span></li>
-                                    <li>1 Quarterly <span> (Rs. 60,000)</span></li>
-                                    <li>1 Half yearly <span> (Rs. 1,00,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 60,000)</span></li>
+                                    <li>Half yearly <span> (Rs. 1,00,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -289,9 +291,9 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 14,000)</span></li>
-                                    <li>1 Quarterly <span> (Rs. 38,000)</span></li>
-                                    <li>1 half yearly <span> (Rs. 68,000)</span></li>
-                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 38,000)</span></li>
+                                    <li>half yearly <span> (Rs. 68,000)</span></li>
+                                    <li>yearly <span> (Rs. 1,00,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -320,9 +322,9 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 15,000)</span></li>
-                                    <li>1 Quarterly <span> (Rs. 35,000)</span></li>
-                                    <li>1 half yearly <span> (Rs. 65,000)</span></li>
-                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 35,000)</span></li>
+                                    <li>half yearly <span> (Rs. 65,000)</span></li>
+                                    <li>yearly <span> (Rs. 1,00,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -347,9 +349,9 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 11,000)</span></li>
-                                    <li>1 Quarterly <span> (Rs. 30,000)</span></li>
-                                    <li>1 half yearly <span> (Rs. 55,000)</span></li>
-                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 30,000)</span></li>
+                                    <li>half yearly <span> (Rs. 55,000)</span></li>
+                                    <li>yearly <span> (Rs. 1,00,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -374,9 +376,9 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 15,000)</span></li>
-                                    <li>1 Quarterly <span> (Rs. 35,000)</span></li>
-                                    <li>1 half yearly <span> (Rs. 65,000)</span></li>
-                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 35,000)</span></li>
+                                    <li>half yearly <span> (Rs. 65,000)</span></li>
+                                    <li>yearly <span> (Rs. 1,00,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -406,9 +408,9 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 12,000)</span></li>
-                                    <li>1 Quarterly <span> (Rs.32,000)</span></li>
-                                    <li>1 half yearly <span> (Rs. 60,000)</span></li>
-                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                    <li>Quarterly <span> (Rs.32,000)</span></li>
+                                    <li>half yearly <span> (Rs. 60,000)</span></li>
+                                    <li>yearly <span> (Rs. 1,00,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -433,9 +435,9 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 2,999)</span></li>
-                                    <li>1 Quarterly <span> (Rs.6,999)</span></li>
-                                    <li>1 half yearly <span> (Rs. 11,999)</span></li>
-                                    <li>1 yearly <span> (Rs. 19,999)</span></li>
+                                    <li>Quarterly <span> (Rs.6,999)</span></li>
+                                    <li>half yearly <span> (Rs. 11,999)</span></li>
+                                    <li>yearly <span> (Rs. 19,999)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -462,9 +464,9 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 50,000)</span></li>
-                                    <li>1 Quarterly <span> (Rs. 1,50,000)</span></li>
-                                    <li>1 half yearly <span> (Rs. 3,00,000)</span></li>
-                                    <li>1 yearly <span> (Rs. 6,00,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 1,50,000)</span></li>
+                                    <li>half yearly <span> (Rs. 3,00,000)</span></li>
+                                    <li>yearly <span> (Rs. 6,00,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -492,9 +494,9 @@
                                 </div>
                                 <div class="price-detail">
                                   <ul>
-                                    <li>1 Quarterly <span> (Rs. 24,000)</span></li>
-                                    <li>1 Half Yearly <span> (Rs. 66,000)</span></li>
-                                    <li>1 Yearly <span> (Rs. 1,00,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 24,000)</span></li>
+                                    <li>Half Yearly <span> (Rs. 66,000)</span></li>
+                                    <li>Yearly <span> (Rs. 1,00,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -518,8 +520,8 @@
                                 <div class="price-detail">
                                   <ul>
                                     <li>1 Month <span> (Rs. 35,000)</span></li>
-                                    <li>1 Quarterly <span> (Rs. 60,000)</span></li>
-                                    <li>1 Half Yearly <span> (Rs. 1,05,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 60,000)</span></li>
+                                    <li>Half Yearly <span> (Rs. 1,05,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -544,9 +546,9 @@
                                 </div>
                                 <div class="price-detail">
                                   <ul>
-                                    <li>1 Quarterly <span> (Rs. 30,000)</span></li>
-                                    <li>1 half yearly <span> (Rs. 55,000)</span></li>
-                                    <li>1 yearly <span> (Rs. 1,00,000)</span></li>
+                                    <li>Quarterly <span> (Rs. 30,000)</span></li>
+                                    <li>half yearly <span> (Rs. 55,000)</span></li>
+                                    <li>yearly <span> (Rs. 1,00,000)</span></li>
                                   </ul>
                                 </div>
                                 <div class="bank-btn">
@@ -561,7 +563,6 @@
                         </div>
                       </div>
                     </div>
-
                     <!-- Your existing HTML code for carousel controls -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
                       data-bs-slide="prev">
@@ -572,10 +573,8 @@
                       data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </button>
-
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -1137,4 +1136,5 @@
   </ng-template>
   <!--  section modal-->
 </body>
+
 </html>

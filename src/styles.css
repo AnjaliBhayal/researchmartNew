@@ -128,7 +128,7 @@ button.btn:hover {
 }
 .about-ctn p {
     color: #000;
-    font-family: "DM Serif Display";
+    /* font-family: "DM Serif Display"; */
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -394,7 +394,7 @@ section#form {
 }
 
 input#exampleInputEmail1 {
-    padding: 10px 10px;
+    padding: 18px 10px;
     border-radius: 0;
     border: 1px solid grey;
     font-size: 14px;
