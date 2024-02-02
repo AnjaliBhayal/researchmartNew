@@ -1,0 +1,21 @@
+h1.pricing-heading {
+    padding-top: 10px;
+    text-align: center;
+}
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: .25rem;
+    line-height: 40px;
+}ul.conditions li {
+    list-style: none;
+}
+ul.conditions  {
+    list-style: none;
+    line-height: 35px;
+}
+section#disclose {
+    padding: 100px 0;
+}
