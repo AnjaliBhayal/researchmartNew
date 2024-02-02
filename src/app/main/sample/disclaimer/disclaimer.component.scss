@@ -1,0 +1,22 @@
+h4.e-head {
+    padding-top: 21px;
+}
+h1.pricing-heading {
+    padding: 20px 0;
+    text-align: center;
+}
+section#cooperate {
+    padding: 100px 0;
+}
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 40px;
+    border-radius: 0.25rem;
+}
+::marker {
+    color: #cb0e0e;
+}
