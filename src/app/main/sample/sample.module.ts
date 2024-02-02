@@ -18,6 +18,7 @@ import { GrievancehandlingComponent } from './grievancehandling/grievancehandlin
 import { InvestorsupportComponent } from './investorsupport/investorsupport.component';
 import { InvestorcharterComponent } from './investorcharter/investorcharter.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
+import { ServicesComponent } from './services/services.component';
 
 
 const routes = [
@@ -85,6 +86,11 @@ const routes = [
     path: 'Disclaimer',
     component: DisclaimerComponent,
     data: { animation: 'Disclaimer' }
+  },
+  {
+    path: 'services',
+    component: ServicesComponent,
+    data: { animation: 'services' }
   }
 
 
@@ -94,7 +100,7 @@ const routes = [
 ];
 
 @NgModule({
-  declarations: [SampleComponent, HomeComponent, AboutComponent, ComplaintdataComponent, CorporategovernanceComponent, RegulatorydisclosuresComponent, StandarddisclosuerComponent, GrievancehandlingComponent, InvestorsupportComponent, InvestorcharterComponent, DisclaimerComponent],
+  declarations: [SampleComponent, HomeComponent, AboutComponent, ComplaintdataComponent, CorporategovernanceComponent, RegulatorydisclosuresComponent, StandarddisclosuerComponent, GrievancehandlingComponent, InvestorsupportComponent, InvestorcharterComponent, DisclaimerComponent, ServicesComponent],
   imports: [RouterModule.forChild(routes), ContentHeaderModule, ToastrModule, TranslateModule, CoreCommonModule, ReactiveFormsModule,
     FormsModule],
   exports: [SampleComponent, HomeComponent, AboutComponent]
