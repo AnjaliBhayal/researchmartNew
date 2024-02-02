@@ -1194,6 +1194,8 @@ header.offcanvas-menu {
 .fakeimg {
     height: 100%;
     background: #1f1f27;
+    display: flex;
+    justify-content: end;
 }
 .fakeimg.child {
     display: grid;

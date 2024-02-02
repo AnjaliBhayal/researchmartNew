@@ -13,37 +13,6 @@
 
   <body>
     <!-- header -->
-    <!-- <nav class="header-section">
-      <div class="container">
-        <div class="header-parent">
-          <div class="header-logo col-sm-3 col-md-2 col-lg-2">
-            <a (click)="openModel(content)"><img src="../assets/img/background-1.svg" alt="" /></a>
-          </div>
-          <div class="header-menu col-sm-3 col-md-7 col-lg-7">
-            <ul class="d-flex align-item-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#about">About Us</a>
-              </li>
-
-
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#pricing">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#services">Services</a>
-              </li>
-            </ul>
-          </div>
-          <div class="get-btn col-sm-3 col-md-3 col-lg-3">
-            <button class="get-btn1" type="button"><a href="#form">Contact Us</a></button>
-          </div>
-        </div>
-      </div>
-    </nav> -->
-
     <nav class="navbar color navbar-expand-sm bg-light navbar-light">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -61,8 +30,6 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#about">About Us</a>
             </li>
-
-
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#pricing">Pricing</a>
             </li>
@@ -71,7 +38,6 @@
             </li>
           </ul>
           <form class="d-flex">
-            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
             <button class="get-btn1" type="button"><a href="#form">Contact Us</a></button>
           </form>
         </div>
@@ -79,100 +45,8 @@
     </nav>
     <!-- header -->
 
-    <!-- second header -->
-    <!-- <header class="offcanvas-menu">
-      <div class="container">
-        <div class="logo-icon">
-          <div class="logo">
-            <a><img src="../assets/img/logo-02.svg " alt="" /></a>
-          </div>
-        </div>
-      </div>
-      <input type="checkbox" id="toogle-menu" />
-
-      <label for="toogle-menu" class="toogle-open"><span></span></label>
-      <nav>
-        <div>
-          <a href="#"> <i class="fab fa-css3-alt"></i><img src="image/Layer 13.png" alt=""> </a>
-          <label for="toogle-menu" class="toogle-close">
-            <span></span>
-          </label>
-        </div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us </a></li>
-          <li><a href="">Pricing </a></li>
-          <li><a href="">Contact us </a></li>
-        </ul>
-      </nav>
-    </header> -->
-    <!-- second header -->
-
-
     <!-- banner section-->
-    <!-- <div id="home">
-      <section class="ban_sec">
-        <div class="ban_img">
-          <img  src="../assets/img/Group 111 (1).svg" alt="banner" border="0">
-          <div class="container">
-            <div class="row">
-              <div class="first-column col-md-7 col-sm-12 col-lg-7">
-                <div class="ban_text">
-                  <div class="banner-ctn">
-                    <h1>
-                      Unlock Your Path to Profit With Our Stock Recommendations
-                    </h1>
-                  </div>
-                  <div class="form-parent">
-                    <form [formGroup]="bannerForm" (ngSubmit)="banneronSubmit()">
-                      <div class="form-group">
-                        <input type="email" class="form-control" formControlName="name" id="exampleInputEmail11"
-                          aria-describedby="emailHelp" placeholder="Enter Your Name" [ngClass]="{
-                          'is-invalid': submittedb && b.name.errors
-                        }" />
-                        <div *ngIf="submittedb && b.name.errors" class="invalid-feedback">
-                          <div *ngIf="b.name.errors.required"> Full Name is required</div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control" formControlName="pNumber" id="exampleInputEmail11"
-                          aria-describedby="emailHelp" placeholder="Enter Your Number" [ngClass]="{
-                          'is-invalid': submittedb && b.pNumber.errors
-                        }" />
-                        <div *ngIf="submittedb && b.pNumber.errors" class="invalid-feedback">
-                          <div *ngIf="b.pNumber.errors.required"> Phone Number is required</div>
-                          <div *ngIf="bannerForm.get('pNumber').hasError('maxlength')">
-                            Mobile Number requied only 10 characters.
-                          </div>
-                          <div *ngIf="bannerForm.get('pNumber').hasError('minlength')">
-                            Mobile Number requied only 10 characters.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control" formControlName="citys" id="exampleInputEmail11"
-                          aria-describedby="emailHelp" placeholder="Enter Your C  ity" [ngClass]="{
-                          'is-invalid': submittedb && b.citys.errors
-                        }">
-                        <div *ngIf="submittedb && b.citys.errors" class="invalid-feedback">
-                          <div *ngIf="b.citys.errors.required"> City is required</div>
-                        </div>
-                      </div>
-                      <button type="submit" class="form1">Submit</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="first-column1 col-md-5">
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div> -->
     <div class="mybanner">
-
       <div class="container-fluid">
         <div class="row p-0">
           <div class=" fake-parent col-sm-12 col-md-7 col-lg-7 p-0">
@@ -225,16 +99,12 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
             <hr class="d-sm-none">
           </div>
           <div class="col-sm-12 col-md-5 col-lg-5 p-0 pl-0 pr-0">
-
             <div class="fakeimg"><img class="img-fluid" src="../../../assets/images/myimages/banner.svg"></div>
-
-
           </div>
         </div>
       </div>
@@ -262,48 +132,17 @@
                   At Research Mart, Our Mission Is To Provide Top-Class Stock Recommendations ,
                   Through Top-Class Thorough Research.
                 </p>
-
                 <button class="btn"><a href="#form">Contact Us</a></button>
-
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- <div id="about">
-      <section id="about">
-        <div class="about-parent">
-          <div class="container">
-            <div class="about-column-parent">
-              <div class="about-column">
-                <a href=""><img class="img-fluid" src="../assets/img/subtract-3.png" alt="" /></a>
-              </div>
-              <div class="about-clm">
-                <div class="about-ctn">
-                  <div class="line d-flex">
-                    <img class="line" src="../assets/img/line-1-1.svg" />
-                    <h1>About <span>Us</span></h1>
-                  </div>
-                  <p>
-                    At Research Mart, Our Mission Is To Provide Top-Class Stock Recommendations ,
-                    Through Top-Class Thorough Research.
-                  </p>
-
-                  <button class="btn"><a href="#form">Contact Us</a></button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div> -->
     <!-- about section -->
 
-    <!-- services section -->
 
+    <!-- services section -->
     <section id="services">
       <div class="services-parent">
         <div class="container">
@@ -353,10 +192,6 @@
                     <img class="img-fluid" src="../../../assets/img/rectangle-16.png" alt="">
                   </div>
                 </div>
-                <!-- <div class="box1">
-                    <div class="box">
-                    </div>
-                  </div> -->
               </div>
             </div>
           </div>
@@ -364,7 +199,6 @@
       </div>
     </section>
     <!-- services section -->
-
 
 
     <!-- pricing section -->
@@ -396,7 +230,6 @@
                               <div class="card-body">
                                 <p class="card-text"> minim veniam, quis nostrud exercitation ullamco
                                   laboris nisi ut aliquip ex ea commodo con</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -423,7 +256,6 @@
                               <div class="card-body">
                                 <p class="card-text">This is customized service for High Net worth Investors, in which
                                   clients get combinations of all signals by one expert.</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -451,7 +283,6 @@
                                   Zinc, Nickel, Crude Oil & Natural Gas recommendation with target & stop loss. We
                                   provide you Recommendations on the in-depth analysis using technical & fundamental
                                   analysis by using SMS system.</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -483,7 +314,6 @@
                               <div class="card-body">
                                 <p class="card-text"> In Future Pragati Product, we will provide recommendations in
                                   Stock Futures, recommendations will be given purely on an intraday basis.</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -511,7 +341,6 @@
                                 <p class="card-text"> Product requires minimum Investment. In this product we will
                                   provide you Nifty & Bank Nifty options recommendations on the basis of technical
                                   analysis.</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -539,7 +368,6 @@
                                 <p class="card-text">Nifty is a commonly traded as derivative in stock market. This is
                                   our premium package which is especially designed to all traders and investors who
                                   wants to trade in Nifty Futures and Bank Nifty Futures intraday trading.</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -572,7 +400,6 @@
                                 <p class="card-text"> This package is designed for traders who do not have time to track
                                   the market on daily basis and also do not want to get involved in intraday trading.
                                 </p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -600,7 +427,6 @@
                                 <p class="card-text"> Equity Research Report will be made by Research Analyst on Equity
                                   market. It also contains all the important and useful data of global market and Indian
                                   stock market.</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -630,7 +456,6 @@
                                   Derivative Market. We provide you call onthe in-depth analysis using technical
                                   analysis by using SMS system. Recommendations will be provided in Liquid script, with
                                   good open interest.</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -662,7 +487,6 @@
                                 <p class="card-text">In Svarn Nivesh Product we provide Gold & Silver recommendation
                                   with target & stop loss. We provide you Recommendations on the in-depth analysis using
                                   technical & fundamental analysis by using SMS system.</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -688,7 +512,6 @@
                               <div class="card-body">
                                 <p class="card-text">In Option Chayan we provide Stocks & Index intraday/holding
                                   recommendation for traders with proper Target & Stop loss in Derivative Market.</p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
@@ -707,7 +530,7 @@
                                 </div>
                               </div>
                             </div>
-                         
+
                           </div>
                           <div class="card d-none d-md-block">
                             <div class="my-card">
@@ -716,12 +539,11 @@
                                 <p class="card-text">This package is designed for traders who do not have time to track
                                   the market on daily basis and also do not want to get involved in intraday trading.
                                 </p>
-                                <!-- <h5 class="card-title">Ad Minim Veniam,</h5> -->
                                 <div class="gst">
                                   <h5>Pricing ( Excluding GST)</h5>
                                 </div>
                                 <div class="price-detail">
-                                  <ul>                           
+                                  <ul>
                                     <li>1 Quarterly <span> (Rs. 30,000)</span></li>
                                     <li>1 half yearly <span> (Rs. 55,000)</span></li>
                                     <li>1 yearly <span> (Rs. 1,00,000)</span></li>
@@ -744,13 +566,11 @@
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
                       data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <!-- <span class="visually-hidden" style="color: black;">Previous</span> -->
                     </button>
 
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"
                       data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <!-- <span class="visually-hidden">Next</span> -->
                     </button>
 
                   </div>
@@ -1316,7 +1136,5 @@
     </div>
   </ng-template>
   <!--  section modal-->
-
 </body>
-
 </html>
