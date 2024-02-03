@@ -23,10 +23,11 @@ body {
 .card {
   border: 0;
   border-radius: 0px;
+  // height: 100%;
   -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
   box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
   transition: all .3s ease-in-out;
-  padding: 2.25rem 0;
+  padding:0px 0px ;
   position: relative;
   will-change:transform; 
   
@@ -75,10 +76,10 @@ body {
   font-size: 7rem;
   letter-spacing: -.5rem;
   & .currency {
-    font-size: 2.75rem;
+    font-size: 30px;
     position: relative;
     font-weight: $main-font-weight + 100;
-    top: -45px;
+    // top: -20px;
     letter-spacing: 0px;
   }
   & .period {
@@ -99,12 +100,23 @@ body {
   letter-spacing: 1px;
 }
 
-.btn-gradient { 
-  background-color: #f2f2f2;
-  transition: background .3s ease-in-out;
-  
-  &:hover {
-    color: white;
-    background-color: $primary-color;
-  }
+.btn-gradient {
+  background-color: #ffffff;
+  transition: background 0.3s ease-in-out;
+  width: 85%;
+  /* background-color: rebeccapurple; */
+  border: 2px solid #b50202;
+  color: #b50202;
+}
+button.bank {
+  background-color: white;
+  border-radius: 23px;
+  padding: 3px 10px;
+  border: 1px solid #9b9b9b;
+}h6.card__desc{
+  font-size: 15px;
+  font-weight: lighter;
+}
+.my-table {
+  padding: 20px;
 }
