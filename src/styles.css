@@ -1218,3 +1218,6 @@ div#about {
 section#services {
     padding: 60px 0;
 }
+.footer-menu a:hover {
+    color: red;
+}
