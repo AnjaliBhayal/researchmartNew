@@ -1221,3 +1221,7 @@ section#services {
 .footer-menu a:hover {
     color: red;
 }
+.Privacypolicybtn{
+    text-decoration: none;
+    color: #000;
+}

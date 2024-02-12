@@ -19,6 +19,7 @@ import { InvestorsupportComponent } from './investorsupport/investorsupport.comp
 import { InvestorcharterComponent } from './investorcharter/investorcharter.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { ServicesComponent } from './services/services.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 
 const routes = [
@@ -91,16 +92,21 @@ const routes = [
     path: 'services',
     component: ServicesComponent,
     data: { animation: 'services' }
+  },
+  {
+    path: 'Privacypolicy',
+    component: PrivacypolicyComponent,
+    data: { animation: 'Privacypolicy' }
   }
 
-
+  
 
 
 
 ];
 
 @NgModule({
-  declarations: [SampleComponent, HomeComponent, AboutComponent, ComplaintdataComponent, CorporategovernanceComponent, RegulatorydisclosuresComponent, StandarddisclosuerComponent, GrievancehandlingComponent, InvestorsupportComponent, InvestorcharterComponent, DisclaimerComponent, ServicesComponent],
+  declarations: [SampleComponent, HomeComponent, AboutComponent, ComplaintdataComponent, CorporategovernanceComponent, RegulatorydisclosuresComponent, StandarddisclosuerComponent, GrievancehandlingComponent, InvestorsupportComponent, InvestorcharterComponent, DisclaimerComponent, ServicesComponent, PrivacypolicyComponent],
   imports: [RouterModule.forChild(routes), ContentHeaderModule, ToastrModule, TranslateModule, CoreCommonModule, ReactiveFormsModule,
     FormsModule],
   exports: [SampleComponent, HomeComponent, AboutComponent]
